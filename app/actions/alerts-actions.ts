@@ -19,7 +19,7 @@ export async function getAlerts(filters: {
     }
 
     if (filters.category !== 'all') {
-      conditions.push(eq(alerts.category, filters.category as 'system' | 'equipment' | 'communication' | 'security'))
+      conditions.push(eq(alerts.category, filters.category as 'battery' | 'solar' | 'grid' | 'inverter' | 'system' | 'maintenance'))
     }
 
     if (filters.status !== 'all') {
