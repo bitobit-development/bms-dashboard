@@ -21,11 +21,11 @@ export async function getEquipmentList(filters: {
     }
 
     if (filters.type !== 'all') {
-      conditions.push(eq(equipment.type, filters.type))
+      conditions.push(eq(equipment.type, filters.type as 'inverter' | 'battery' | 'solar_panel' | 'charge_controller' | 'grid_meter'))
     }
 
     if (filters.status !== 'all') {
-      conditions.push(eq(equipment.status, filters.status))
+      conditions.push(eq(equipment.status, filters.status as 'active' | 'maintenance' | 'offline' | 'fault'))
     }
 
     if (filters.site !== 'all') {
