@@ -15,15 +15,15 @@ export async function getAlerts(filters: {
     const conditions = []
 
     if (filters.severity !== 'all') {
-      conditions.push(eq(alerts.severity, filters.severity))
+      conditions.push(eq(alerts.severity, filters.severity as 'info' | 'warning' | 'error' | 'critical'))
     }
 
     if (filters.category !== 'all') {
-      conditions.push(eq(alerts.category, filters.category))
+      conditions.push(eq(alerts.category, filters.category as 'system' | 'equipment' | 'communication' | 'security'))
     }
 
     if (filters.status !== 'all') {
-      conditions.push(eq(alerts.status, filters.status))
+      conditions.push(eq(alerts.status, filters.status as 'active' | 'acknowledged' | 'resolved' | 'dismissed'))
     }
 
     if (filters.site !== 'all') {
