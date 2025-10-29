@@ -16,11 +16,11 @@ export default async function WeatherPage() {
         </p>
       </div>
 
-      {result.success ? (
+      {result.success && result.data ? (
         <WeatherDashboard sites={result.data} />
       ) : (
         <div className="rounded-lg border bg-card p-8 text-center">
-          <p className="text-lg text-destructive">{result.error}</p>
+          <p className="text-lg text-destructive">{result.error || 'Failed to load weather data'}</p>
         </div>
       )}
     </div>
