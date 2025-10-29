@@ -254,7 +254,7 @@ async function main() {
         status: 'operational' as const,
         healthScore: 98,
         installedAt: new Date(Date.now() - 365 * 24 * 60 * 60 * 1000),
-        specs: { maxPower: site.batteryCapacityKwh, efficiency: 95, warrantyYears: 10 },
+        specs: { maxPower: site.batteryCapacityKwh!, efficiency: 95, warrantyYears: 10 },
       },
       // Solar panels
       {
@@ -269,7 +269,7 @@ async function main() {
         status: 'operational' as const,
         healthScore: 97,
         installedAt: new Date(Date.now() - 365 * 24 * 60 * 60 * 1000),
-        specs: { maxPower: site.solarCapacityKw, efficiency: 22, warrantyYears: 25 },
+        specs: { maxPower: site.solarCapacityKw!, efficiency: 22, warrantyYears: 25 },
       },
     ]
 
