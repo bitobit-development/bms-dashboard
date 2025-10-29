@@ -20,7 +20,7 @@ const MAX_PARTICLES = 30
 
 export function EnergyFlowCanvas({ flows, isPaused = false }: EnergyFlowCanvasProps) {
   const [particles, setParticles] = useState<Particle[]>([])
-  const intervalRef = useRef<NodeJS.Timeout>()
+  const intervalRef = useRef<NodeJS.Timeout | undefined>(undefined)
 
   useEffect(() => {
     if (isPaused) {
