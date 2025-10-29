@@ -91,7 +91,8 @@ async function checkDatabaseStats() {
       console.log(`   Solar: ${reading.solarPowerKw?.toFixed(2)}kW (${reading.solarEfficiency?.toFixed(1)}% efficient)`)
       console.log(`   Load: ${reading.loadPowerKw?.toFixed(2)}kW`)
       console.log(`   Grid: ${reading.gridPowerKw?.toFixed(2)}kW (+ = import, - = export)`)
-      console.log(`   System Status: ${reading.systemStatus}`)
+      const metadata = reading.metadata as { systemStatus?: string } | null
+      console.log(`   System Status: ${metadata?.systemStatus || 'N/A'}`)
     }
 
     console.log('\n' + '═'.repeat(60))

@@ -21,8 +21,10 @@ export function EnergyFlowDiagram({ telemetry, className, compact = false }: Ene
 
   // Determine grid state
   const getGridState = () => {
-    if (telemetry.gridImportKw > 0.1) return 'Import'
-    if (telemetry.gridExportKw > 0.1) return 'Export'
+    const gridImport = telemetry.gridImportKw || 0
+    const gridExport = telemetry.gridExportKw || 0
+    if (gridImport > 0.1) return 'Import'
+    if (gridExport > 0.1) return 'Export'
     return 'Idle'
   }
 
@@ -82,7 +84,7 @@ export function EnergyFlowDiagram({ telemetry, className, compact = false }: Ene
           {/* Grid */}
           <PowerNode
             type="grid"
-            powerKw={telemetry.gridImportKw || telemetry.gridExportKw || 0}
+            powerKw={(telemetry.gridImportKw || 0) || (telemetry.gridExportKw || 0)}
             label={NODE_CONFIG.grid.label}
             position={NODE_POSITIONS.grid}
             state={getGridState()}

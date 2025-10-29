@@ -8,12 +8,17 @@ type SiteEnergyFlowProps = {
 
 export const SiteEnergyFlow = ({ telemetry }: SiteEnergyFlowProps) => {
   // Transform telemetry data to match EnergyFlowDiagram expected format
+  // Derive grid import/export from gridPowerKw (positive = import, negative = export)
+  const gridPower = telemetry.gridPowerKw || 0
+  const gridImport = gridPower > 0 ? gridPower : 0
+  const gridExport = gridPower < 0 ? Math.abs(gridPower) : 0
+
   const energyFlowData = {
     solarPowerKw: telemetry.solarPowerKw || 0,
     batteryPowerKw: telemetry.batteryPowerKw || 0, // negative = charging, positive = discharging
     loadPowerKw: telemetry.loadPowerKw || 0,
-    gridImportKw: (telemetry.gridPowerKw || 0) > 0 ? (telemetry.gridPowerKw || 0) : 0,
-    gridExportKw: (telemetry.gridPowerKw || 0) < 0 ? Math.abs(telemetry.gridPowerKw || 0) : 0,
+    gridImportKw: gridImport,
+    gridExportKw: gridExport,
     batteryChargeLevel: telemetry.batteryChargeLevel || 0,
   }
 

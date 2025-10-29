@@ -199,7 +199,7 @@ const seedSiteData = async (
     const gridVoltage = addNoise(230, 2) // 230V ±2%
     const gridFrequency = addNoise(50, 0.5) // 50Hz ±0.5%
 
-    // Grid power is net of import/export
+    // Grid power (positive = import, negative = export)
     const gridPowerKw = simulation.gridImportKw - simulation.gridExportKw
 
     // 6. Determine system status

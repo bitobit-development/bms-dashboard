@@ -57,9 +57,9 @@ export interface BatteryState {
 export interface SimulationResult {
   /** Updated battery state */
   batteryState: BatteryState
-  /** Grid import power in kW (positive = importing) */
+  /** Grid import power in kW (0 if not importing) */
   gridImportKw: number
-  /** Grid export power in kW (positive = exporting) */
+  /** Grid export power in kW (0 if not exporting) */
   gridExportKw: number
 }
 

@@ -30,8 +30,8 @@ export interface ActiveFlow {
 export interface TelemetryData {
   solarPowerKw: number
   batteryPowerKw: number
-  gridImportKw: number
-  gridExportKw: number
+  gridImportKw?: number // Derived from gridPowerKw (positive values)
+  gridExportKw?: number // Derived from gridPowerKw (negative values, absolute)
   loadPowerKw: number
   batteryChargeLevel: number
 }

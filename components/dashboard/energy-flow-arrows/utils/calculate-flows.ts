@@ -12,10 +12,12 @@ export function calculateActiveFlows(telemetry: TelemetryData): ActiveFlow[] {
   const {
     solarPowerKw = 0,
     batteryPowerKw = 0,
-    gridImportKw = 0,
-    gridExportKw = 0,
     loadPowerKw = 0,
   } = telemetry
+
+  // Derive grid import/export from schema
+  const gridImportKw = telemetry.gridImportKw || 0
+  const gridExportKw = telemetry.gridExportKw || 0
 
   // Solar to Battery (charging from solar)
   if (solarPowerKw > POWER_THRESHOLD && batteryPowerKw < -POWER_THRESHOLD) {

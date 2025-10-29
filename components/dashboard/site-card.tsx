@@ -37,8 +37,9 @@ export function SiteCard({ site, className }: SiteCardProps) {
     const flows: EnergyFlow[] = []
     const solarPower = latestReading.solarPowerKw || 0
     const batteryPower = latestReading.batteryPowerKw || 0
-    const gridImport = latestReading.gridImportKw || 0
-    const gridExport = latestReading.gridExportKw || 0
+    const gridPower = latestReading.gridPowerKw || 0
+    const gridImport = gridPower > 0 ? gridPower : 0
+    const gridExport = gridPower < 0 ? Math.abs(gridPower) : 0
     const loadPower = latestReading.loadPowerKw || 0
 
     // Solar to Battery (charging from solar)

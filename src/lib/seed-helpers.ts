@@ -192,12 +192,21 @@ export const validateEnergyBalance = (
   // Calculate total energy for each component
   // Note: Each reading represents energy over 5 minutes
   const solarKwh = sum(readings.map((r) => r.solarPowerKw || 0)) * (5 / 60)
+
+  // Derive grid import/export from gridPowerKw (positive = import, negative = export)
   const gridImportKwh = sum(
-    readings.map((r) => Math.max(0, r.gridPowerKw || 0))
+    readings.map((r) => {
+      const gridPower = r.gridPowerKw || 0
+      return gridPower > 0 ? gridPower : 0
+    })
   ) * (5 / 60)
   const gridExportKwh = sum(
-    readings.map((r) => Math.max(0, -(r.gridPowerKw || 0)))
+    readings.map((r) => {
+      const gridPower = r.gridPowerKw || 0
+      return gridPower < 0 ? Math.abs(gridPower) : 0
+    })
   ) * (5 / 60)
+
   const loadKwh = sum(readings.map((r) => r.loadPowerKw || 0)) * (5 / 60)
 
   // Calculate battery energy change from charge level
