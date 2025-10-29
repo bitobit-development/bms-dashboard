@@ -26,8 +26,6 @@ export interface SiteWithLatestTelemetry {
     solarPowerKw: number | null
     loadPowerKw: number | null
     gridPowerKw: number | null
-    gridImportKw: number | null
-    gridExportKw: number | null
     inverter1PowerKw: number | null
     inverter2PowerKw: number | null
     batteryStateOfHealth: number | null
@@ -67,8 +65,6 @@ export async function getSites(): Promise<SiteWithLatestTelemetry[]> {
           solarPowerKw: telemetryReadings.solarPowerKw,
           loadPowerKw: telemetryReadings.loadPowerKw,
           gridPowerKw: telemetryReadings.gridPowerKw,
-          gridImportKw: telemetryReadings.gridEnergyKwh,
-          gridExportKw: telemetryReadings.gridEnergyKwh,
           inverter1PowerKw: telemetryReadings.inverter1PowerKw,
           inverter2PowerKw: telemetryReadings.inverter2PowerKw,
           batteryStateOfHealth: telemetryReadings.batteryStateOfHealth,
