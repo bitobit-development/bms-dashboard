@@ -25,7 +25,7 @@ export async function getEquipmentList(filters: {
     }
 
     if (filters.status !== 'all') {
-      conditions.push(eq(equipment.status, filters.status as 'active' | 'maintenance' | 'offline' | 'fault'))
+      conditions.push(eq(equipment.status, filters.status as 'operational' | 'degraded' | 'offline' | 'maintenance' | 'failed'))
     }
 
     if (filters.site !== 'all') {
