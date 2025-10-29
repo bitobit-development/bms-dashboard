@@ -99,7 +99,7 @@ export const POST = async (request: NextRequest): Promise<NextResponse<Telemetry
           : null,
       loadPowerKw: reading.load_power_kw ?? null,
       metadata: {
-        dataQuality: 'good',
+        dataQuality: 'good' as 'good' | 'degraded' | 'poor',
         receivedAt: new Date().toISOString(),
       },
     }))
