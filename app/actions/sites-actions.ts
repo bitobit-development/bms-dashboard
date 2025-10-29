@@ -20,7 +20,7 @@ export async function getSitesWithStats(filters: {
     }
 
     if (filters.status !== 'all') {
-      conditions.push(eq(sites.status, filters.status))
+      conditions.push(eq(sites.status, filters.status as 'active' | 'inactive' | 'maintenance' | 'offline'))
     }
 
     // Get sites with latest telemetry
