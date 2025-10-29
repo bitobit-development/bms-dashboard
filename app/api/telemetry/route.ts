@@ -140,7 +140,7 @@ export const POST = async (request: NextRequest): Promise<NextResponse<Telemetry
         {
           success: false,
           error: 'Validation error',
-          details: error.errors,
+          details: error.issues,
         },
         { status: 400 }
       )
