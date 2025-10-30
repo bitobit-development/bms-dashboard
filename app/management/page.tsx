@@ -205,30 +205,31 @@ function StatsCard({
   href,
   highlight,
 }: StatsCardProps) {
-  const CardWrapper = href ? Link : 'div'
-  const cardProps = href ? { href } : {}
-
-  return (
-    <CardWrapper {...cardProps}>
-      <Card className={highlight ? 'border-yellow-300 bg-yellow-50/50' : ''}>
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium">{title}</CardTitle>
-          <Icon className="h-4 w-4 text-muted-foreground" />
-        </CardHeader>
-        <CardContent>
-          {isLoading ? (
-            <>
-              <Skeleton className="h-8 w-20 mb-2" />
-              <Skeleton className="h-4 w-32" />
-            </>
-          ) : (
-            <>
-              <div className={`text-2xl font-bold ${valueColor || ''}`}>{value}</div>
-              <p className="text-xs text-muted-foreground">{description}</p>
-            </>
-          )}
-        </CardContent>
-      </Card>
-    </CardWrapper>
+  const cardContent = (
+    <Card className={highlight ? 'border-yellow-300 bg-yellow-50/50' : ''}>
+      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+        <CardTitle className="text-sm font-medium">{title}</CardTitle>
+        <Icon className="h-4 w-4 text-muted-foreground" />
+      </CardHeader>
+      <CardContent>
+        {isLoading ? (
+          <>
+            <Skeleton className="h-8 w-20 mb-2" />
+            <Skeleton className="h-4 w-32" />
+          </>
+        ) : (
+          <>
+            <div className={`text-2xl font-bold ${valueColor || ''}`}>{value}</div>
+            <p className="text-xs text-muted-foreground">{description}</p>
+          </>
+        )}
+      </CardContent>
+    </Card>
   )
+
+  if (href) {
+    return <Link href={href}>{cardContent}</Link>
+  }
+
+  return cardContent
 }
