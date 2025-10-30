@@ -50,6 +50,10 @@ export function Sidebar() {
   const app = useStackApp()
   const router = useRouter()
 
+  if (!user) {
+    return null
+  }
+
   const isActive = (href: string) => {
     if (href === '/dashboard') {
       return pathname === '/dashboard'
@@ -57,8 +61,8 @@ export function Sidebar() {
     return pathname.startsWith(href)
   }
 
-  const displayName = user?.displayName || user?.primaryEmail || 'User'
-  const email = user?.primaryEmail || ''
+  const displayName = user.displayName || user.primaryEmail || 'User'
+  const email = user.primaryEmail || ''
   const initials = displayName
     .split(' ')
     .map((n) => n[0])
@@ -67,7 +71,7 @@ export function Sidebar() {
     .substring(0, 2)
 
   const handleSignOut = async () => {
-    await user?.signOut()
+    await user.signOut()
     router.push('/login')
   }
 

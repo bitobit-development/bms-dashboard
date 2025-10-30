@@ -21,8 +21,12 @@ export function DashboardNav() {
   const app = useStackApp()
   const router = useRouter()
 
-  const displayName = user?.displayName || user?.primaryEmail || 'User'
-  const email = user?.primaryEmail || ''
+  if (!user) {
+    return null
+  }
+
+  const displayName = user.displayName || user.primaryEmail || 'User'
+  const email = user.primaryEmail || ''
   const initials = displayName
     .split(' ')
     .map((n) => n[0])
@@ -31,7 +35,7 @@ export function DashboardNav() {
     .substring(0, 2)
 
   const handleSignOut = async () => {
-    await user?.signOut()
+    await user.signOut()
     router.push('/login')
   }
 
