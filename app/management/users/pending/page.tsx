@@ -6,17 +6,8 @@ import { Alert, AlertDescription } from '@/components/ui/alert'
 import { AlertCircle, RefreshCw, ArrowLeft } from 'lucide-react'
 import { ApprovalQueue } from '@/components/management/approval-queue'
 import { getPendingUsers, approveUser, rejectUser } from '@/src/lib/actions/users'
+import type { UserWithDetails } from '@/app/actions/management'
 import Link from 'next/link'
-
-type UserWithDetails = {
-  id: number
-  email: string
-  firstName: string | null
-  lastName: string | null
-  createdAt: Date
-  role: string
-  status: string
-}
 
 export default function PendingUsersPage() {
   const [users, setUsers] = useState<UserWithDetails[]>([])
