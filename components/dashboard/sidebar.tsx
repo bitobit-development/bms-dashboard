@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { mainNavigation, footerNavigation, type NavItem } from '@/lib/navigation'
+import { LiveClock } from './live-clock'
 import { useUser, useStackApp } from '@stackframe/stack'
 import {
   DropdownMenu,
@@ -137,6 +138,11 @@ export function Sidebar() {
           </div>
           <span>BMS Dashboard</span>
         </Link>
+      </div>
+
+      {/* Live Clock */}
+      <div className="flex items-center justify-center border-b px-4 py-3">
+        <LiveClock />
       </div>
 
       {/* Navigation Sections */}

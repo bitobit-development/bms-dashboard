@@ -22,6 +22,7 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Battery, User, Zap, LogOut, Shield, Loader2 } from 'lucide-react'
 import Link from 'next/link'
 import { MobileNav } from './mobile-nav'
+import { LiveClock } from './live-clock'
 import { useUser, useStackApp } from '@stackframe/stack'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
@@ -103,6 +104,7 @@ export function DashboardNav() {
         </div>
 
         <div className="flex items-center gap-4">
+          <LiveClock />
           {user && (
             <DropdownMenu>
               <DropdownMenuTrigger asChild suppressHydrationWarning>
