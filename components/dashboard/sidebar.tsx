@@ -67,7 +67,7 @@ export function Sidebar() {
     .substring(0, 2)
 
   const handleSignOut = async () => {
-    await app.signOut()
+    await user.signOut()
     router.push('/login')
   }
 
