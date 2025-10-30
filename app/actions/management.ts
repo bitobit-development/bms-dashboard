@@ -4,6 +4,7 @@ import { db } from '@/src/db'
 import { organizationUsers, userAuditLog } from '@/src/db/schema'
 import { eq, and, or, ilike, desc, sql } from 'drizzle-orm'
 import { hasPermission, canManageRole, isValidRole, type Role } from '@/lib/auth/permissions'
+import { stackServerApp } from '@/app/stack'
 
 // Types
 export type UserFilters = {
@@ -16,20 +17,37 @@ export type UserFilters = {
 
 export type UserWithDetails = typeof organizationUsers.$inferSelect
 
-// Temporary: Hardcoded admin user for testing (replace with Stack Auth later)
-const CURRENT_USER = {
-  id: 'admin-1',
-  name: 'Admin User',
-  email: 'admin@bms.com',
-  role: 'admin' as Role,
-}
-
 /**
- * Get current user (temporary hardcoded for testing)
- * TODO: Replace with Stack Auth integration
+ * Get current authenticated user from Stack Auth
  */
 async function getCurrentUser() {
-  return CURRENT_USER
+  const user = await stackServerApp.getUser()
+
+  if (!user) {
+    throw new Error('Not authenticated')
+  }
+
+  // Check if user exists in organization_users table
+  const [orgUser] = await db
+    .select()
+    .from(organizationUsers)
+    .where(eq(organizationUsers.stackUserId, user.id))
+    .limit(1)
+
+  if (!orgUser) {
+    throw new Error('User not found in organization')
+  }
+
+  if (orgUser.status !== 'active') {
+    throw new Error('User account is not active')
+  }
+
+  return {
+    id: user.id,
+    name: `${orgUser.firstName || ''} ${orgUser.lastName || ''}`.trim() || user.displayName || user.primaryEmail || 'Unknown User',
+    email: user.primaryEmail || orgUser.email,
+    role: orgUser.role as Role,
+  }
 }
 
 /**

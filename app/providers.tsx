@@ -1,13 +1,16 @@
 'use client'
 
 import { Toaster } from 'sonner'
+import { StackProvider, StackTheme } from '@stackframe/stack'
+import { stackClientApp } from './stack-client'
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  // TODO: Add Stack Auth provider when authentication is fully configured
   return (
-    <>
-      {children}
-      <Toaster position="top-right" richColors />
-    </>
+    <StackProvider app={stackClientApp}>
+      <StackTheme>
+        {children}
+        <Toaster position="top-right" richColors />
+      </StackTheme>
+    </StackProvider>
   )
 }

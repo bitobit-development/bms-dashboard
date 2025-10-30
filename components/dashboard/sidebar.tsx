@@ -1,14 +1,24 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Battery, Zap } from 'lucide-react'
+import { usePathname, useRouter } from 'next/navigation'
+import { Battery, Zap, LogOut } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
 import { mainNavigation, footerNavigation, type NavItem } from '@/lib/navigation'
+import { useUser, useStackApp } from '@stackframe/stack'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 
 function NavLink({ item, isActive }: { item: NavItem; isActive: boolean }) {
   const Icon = item.icon
@@ -36,12 +46,29 @@ function NavLink({ item, isActive }: { item: NavItem; isActive: boolean }) {
 
 export function Sidebar() {
   const pathname = usePathname()
+  const user = useUser()
+  const app = useStackApp()
+  const router = useRouter()
 
   const isActive = (href: string) => {
     if (href === '/dashboard') {
       return pathname === '/dashboard'
     }
     return pathname.startsWith(href)
+  }
+
+  const displayName = user?.displayName || user?.primaryEmail || 'User'
+  const email = user?.primaryEmail || ''
+  const initials = displayName
+    .split(' ')
+    .map((n) => n[0])
+    .join('')
+    .toUpperCase()
+    .substring(0, 2)
+
+  const handleSignOut = async () => {
+    await app.signOut()
+    router.push('/login')
   }
 
   return (
@@ -87,15 +114,47 @@ export function Sidebar() {
 
       {/* User Section */}
       <div className="border-t p-4">
-        <div className="flex items-center gap-3">
-          <Avatar className="h-9 w-9">
-            <AvatarFallback>JD</AvatarFallback>
-          </Avatar>
-          <div className="flex flex-col flex-1 overflow-hidden">
-            <p className="text-sm font-medium leading-none">John Doe</p>
-            <p className="text-xs text-muted-foreground truncate">admin@bms.com</p>
+        {user ? (
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="w-full justify-start p-0 h-auto hover:bg-accent">
+                <div className="flex items-center gap-3 w-full">
+                  <Avatar className="h-9 w-9">
+                    <AvatarFallback>{initials}</AvatarFallback>
+                  </Avatar>
+                  <div className="flex flex-col flex-1 overflow-hidden text-left">
+                    <p className="text-sm font-medium leading-none">{displayName}</p>
+                    <p className="text-xs text-muted-foreground truncate">{email}</p>
+                  </div>
+                </div>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+                <Link href="/handler/account-settings">Account Settings</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/management">Management Console</Link>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem onClick={handleSignOut} className="text-red-600">
+                <LogOut className="mr-2 h-4 w-4" />
+                Sign Out
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : (
+          <div className="flex items-center gap-3">
+            <Avatar className="h-9 w-9">
+              <AvatarFallback>?</AvatarFallback>
+            </Avatar>
+            <div className="flex flex-col flex-1 overflow-hidden">
+              <p className="text-sm font-medium leading-none">Not signed in</p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   )
