@@ -18,6 +18,7 @@ export * from './alerts'
 
 // Users and Access Control
 export * from './users'
+export * from './user-audit-log'
 
 // Weather
 export * from './weather'

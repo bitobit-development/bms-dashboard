@@ -10,6 +10,7 @@ import {
   Settings,
   Book,
   HelpCircle,
+  Users,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -74,6 +75,16 @@ export const mainNavigation: NavSection[] = [
         title: 'Weather',
         href: '/dashboard/weather',
         icon: CloudSun,
+      },
+    ],
+  },
+  {
+    title: 'Administration',
+    items: [
+      {
+        title: 'Management',
+        href: '/management',
+        icon: Users,
       },
       {
         title: 'Settings',

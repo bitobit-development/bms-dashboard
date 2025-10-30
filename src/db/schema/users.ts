@@ -81,9 +81,9 @@ export const organizationUsers = pgTable('organization_users', {
   }>().default({ allSites: true }),
 
   // Status
-  status: text('status', { enum: ['active', 'inactive', 'suspended'] })
+  status: text('status', { enum: ['pending', 'active', 'inactive', 'suspended'] })
     .notNull()
-    .default('active'),
+    .default('pending'),
 
   // Invitation tracking
   invitedBy: text('invited_by'), // Stack user ID of inviter
