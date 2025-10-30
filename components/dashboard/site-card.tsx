@@ -6,8 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { BatteryGauge } from './battery-gauge'
 import { EnergyFlowCanvas, EnergyFlow } from './energy-flow'
+import { LastCheckedDisplay } from './last-checked-display'
 import { MapPin, Sun, Zap, Home, ArrowUpRight } from 'lucide-react'
-import { formatDistanceToNow } from 'date-fns'
 import { cn } from '@/lib/utils'
 import type { SiteWithLatestTelemetry } from '@/app/actions/sites'
 
@@ -140,11 +140,7 @@ export function SiteCard({ site, className }: SiteCardProps) {
               <Badge variant={getStatusBadgeColor()} className={cn(isOnline && 'animate-pulse')}>
                 {isOnline ? 'Online' : status}
               </Badge>
-              {lastSeenAt && (
-                <span className="text-xs text-muted-foreground">
-                  {formatDistanceToNow(new Date(lastSeenAt), { addSuffix: true })}
-                </span>
-              )}
+              {lastSeenAt && <LastCheckedDisplay timestamp={lastSeenAt} />}
             </div>
           </div>
         </CardHeader>

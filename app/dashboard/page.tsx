@@ -10,6 +10,7 @@ import { RefreshCw, Activity, Battery, Sun, Home, AlertCircle } from 'lucide-rea
 import { useRealtimeData } from '@/hooks/use-realtime-data'
 import { getSites, getSystemStats } from '@/app/actions/sites'
 import { formatDistanceToNow } from 'date-fns'
+import { LiveClock } from '@/components/dashboard/live-clock'
 
 export default function DashboardPage() {
   const user = { displayName: 'Admin User' }
@@ -60,21 +61,24 @@ export default function DashboardPage() {
           <h1 className="text-3xl font-bold">Dashboard</h1>
           <p className="text-muted-foreground">Welcome back, {user?.displayName || 'User'}</p>
         </div>
-        <div className="flex items-center gap-4">
-          {lastUpdated && (
-            <span className="text-sm text-muted-foreground">
-              Updated {formatDistanceToNow(lastUpdated, { addSuffix: true })}
-            </span>
-          )}
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={refresh}
-            disabled={sitesLoading}
-          >
-            <RefreshCw className={`h-4 w-4 mr-2 ${sitesLoading ? 'animate-spin' : ''}`} />
-            Refresh
-          </Button>
+        <div className="flex flex-col items-end gap-2">
+          <LiveClock />
+          <div className="flex items-center gap-4">
+            {lastUpdated && (
+              <span className="text-sm text-muted-foreground">
+                Updated {formatDistanceToNow(lastUpdated, { addSuffix: true })}
+              </span>
+            )}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={refresh}
+              disabled={sitesLoading}
+            >
+              <RefreshCw className={`h-4 w-4 mr-2 ${sitesLoading ? 'animate-spin' : ''}`} />
+              Refresh
+            </Button>
+          </div>
         </div>
       </div>
 
