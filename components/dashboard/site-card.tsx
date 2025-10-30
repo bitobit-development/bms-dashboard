@@ -17,10 +17,10 @@ interface SiteCardProps {
 }
 
 export function SiteCard({ site, className }: SiteCardProps) {
-  const { id, name, status, location, latestReading, batteryCapacityKwh, solarCapacityKw, lastSeenAt } = site
+  const { id, name, status, location, latestReading, batteryCapacityKwh, solarCapacityKw } = site
   const [isHovered, setIsHovered] = useState(false)
 
-  const isOnline = latestReading && lastSeenAt && Date.now() - new Date(lastSeenAt).getTime() < 10 * 60 * 1000
+  const isOnline = latestReading && Date.now() - new Date(latestReading.timestamp).getTime() < 10 * 60 * 1000
   const batteryLevel = latestReading?.batteryChargeLevel || 0
   const isCharging = (latestReading?.batteryPowerKw || 0) < 0 // Negative power means charging
 
@@ -140,7 +140,7 @@ export function SiteCard({ site, className }: SiteCardProps) {
               <Badge variant={getStatusBadgeColor()} className={cn(isOnline && 'animate-pulse')}>
                 {isOnline ? 'Online' : status}
               </Badge>
-              {lastSeenAt && <LastCheckedDisplay timestamp={lastSeenAt} />}
+              {latestReading && <LastCheckedDisplay timestamp={latestReading.timestamp} />}
             </div>
           </div>
         </CardHeader>
