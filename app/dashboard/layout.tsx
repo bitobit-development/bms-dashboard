@@ -1,24 +1,21 @@
-import { DashboardNav } from '@/components/dashboard/nav'
-import { Sidebar } from '@/components/dashboard/sidebar'
-import { Suspense } from 'react'
+'use client'
 
-export const dynamic = 'force-dynamic'
+import dynamicImport from 'next/dynamic'
+
+const DashboardNav = dynamicImport(() => import('@/components/dashboard/nav').then(mod => ({ default: mod.DashboardNav })), { ssr: false })
+const Sidebar = dynamicImport(() => import('@/components/dashboard/sidebar').then(mod => ({ default: mod.Sidebar })), { ssr: false })
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
       {/* Mobile navigation bar */}
-      <Suspense fallback={null}>
-        <DashboardNav />
-      </Suspense>
+      <DashboardNav />
 
       {/* Desktop layout with sidebar */}
       <div className="flex">
         {/* Desktop sidebar - hidden on mobile */}
         <aside className="hidden md:block">
-          <Suspense fallback={null}>
-            <Sidebar />
-          </Suspense>
+          <Sidebar />
         </aside>
 
         {/* Main content area with proper spacing */}
