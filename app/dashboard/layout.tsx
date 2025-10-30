@@ -1,5 +1,6 @@
 import { DashboardNav } from '@/components/dashboard/nav'
 import { Sidebar } from '@/components/dashboard/sidebar'
+import { Suspense } from 'react'
 
 export const dynamic = 'force-dynamic'
 
@@ -7,13 +8,17 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
       {/* Mobile navigation bar */}
-      <DashboardNav />
+      <Suspense fallback={null}>
+        <DashboardNav />
+      </Suspense>
 
       {/* Desktop layout with sidebar */}
       <div className="flex">
         {/* Desktop sidebar - hidden on mobile */}
         <aside className="hidden md:block">
-          <Sidebar />
+          <Suspense fallback={null}>
+            <Sidebar />
+          </Suspense>
         </aside>
 
         {/* Main content area with proper spacing */}
