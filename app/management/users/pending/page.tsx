@@ -28,7 +28,7 @@ export default function PendingUsersPage() {
     setError(null)
     try {
       const result = await getPendingUsers()
-      if (result.success) {
+      if (result.success && result.users) {
         setUsers(result.users)
       } else {
         setError('Failed to load pending users')
