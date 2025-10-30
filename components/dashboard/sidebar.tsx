@@ -74,6 +74,8 @@ export function Sidebar() {
     return pathname.startsWith(href)
   }
 
+  const isOnAccountSettings = pathname.startsWith('/handler/account-settings')
+
   const displayName = user.displayName || user.primaryEmail || 'User'
   const email = user.primaryEmail || ''
   const initials = displayName
@@ -166,7 +168,10 @@ export function Sidebar() {
       </ScrollArea>
 
       {/* User Section */}
-      <div className="border-t p-4">
+      <div className={cn(
+        "border-t p-4 transition-colors",
+        isOnAccountSettings && "bg-accent/50"
+      )}>
         {user ? (
           <DropdownMenu>
             <DropdownMenuTrigger asChild>

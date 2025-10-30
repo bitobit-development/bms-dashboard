@@ -2,6 +2,7 @@
 
 import { Suspense } from 'react'
 import dynamicImport from 'next/dynamic'
+import { Breadcrumb } from '@/components/navigation/breadcrumb'
 
 const DashboardNav = dynamicImport(
   () => import('@/components/dashboard/nav').then(mod => ({ default: mod.DashboardNav })),
@@ -31,9 +32,12 @@ export default function HandlerLayout({ children }: { children: React.ReactNode 
 
         {/* Main content area for Stack Auth */}
         <main className="flex-1 overflow-y-auto">
-          <Suspense fallback={<div className="flex items-center justify-center h-screen">Loading...</div>}>
-            {children}
-          </Suspense>
+          <div className="container py-6 px-6 lg:px-8 animate-in fade-in duration-300">
+            <Breadcrumb />
+            <Suspense fallback={<div className="flex items-center justify-center h-screen">Loading...</div>}>
+              {children}
+            </Suspense>
+          </div>
         </main>
       </div>
     </div>
