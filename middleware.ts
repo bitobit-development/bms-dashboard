@@ -16,6 +16,7 @@ export async function middleware(request: NextRequest) {
       }
 
       // User is authenticated, allow access
+      // Approval check will happen in dashboard layout
       return NextResponse.next()
     } catch (error) {
       // Error checking authentication, redirect to login
