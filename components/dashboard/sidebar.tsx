@@ -127,9 +127,9 @@ export function Sidebar() {
   }
 
   return (
-    <div className="flex h-screen w-64 flex-col border-r bg-background">
+    <div className="flex h-screen w-64 lg:w-72 xl:w-80 flex-col border-r bg-background">
       {/* Brand Section */}
-      <div className="flex h-16 items-center border-b px-6">
+      <div className="flex h-16 items-center border-b px-4 lg:px-6">
         <Link href="/dashboard" className="flex items-center gap-2 font-semibold text-lg">
           <div className="relative">
             <Battery className="h-6 w-6 text-purple-600" />

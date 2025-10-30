@@ -22,17 +22,17 @@ export default function HandlerLayout({ children }: { children: React.ReactNode 
       </Suspense>
 
       {/* Desktop layout with sidebar */}
-      <div className="flex">
+      <div className="flex min-h-screen">
         {/* Desktop sidebar - hidden on mobile */}
-        <aside className="hidden md:block">
-          <Suspense fallback={<div className="w-64 h-screen border-r" />}>
+        <aside className="hidden md:block md:fixed md:h-screen md:left-0 md:top-0">
+          <Suspense fallback={<div className="w-64 lg:w-72 xl:w-80 h-screen border-r" />}>
             <Sidebar />
           </Suspense>
         </aside>
 
-        {/* Main content area for Stack Auth */}
-        <main className="flex-1 overflow-y-auto">
-          <div className="container py-6 px-6 lg:px-8 animate-in fade-in duration-300">
+        {/* Main content area for Stack Auth with responsive margin */}
+        <main className="flex-1 w-full md:ml-64 lg:ml-72 xl:ml-80 overflow-x-hidden">
+          <div className="container max-w-full py-6 px-4 sm:px-6 lg:px-8 animate-in fade-in duration-300">
             <Breadcrumb />
             <Suspense fallback={<div className="flex items-center justify-center h-screen">Loading...</div>}>
               {children}

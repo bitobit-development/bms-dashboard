@@ -90,15 +90,15 @@ export default async function ManagementLayout({ children }: { children: React.R
       <DashboardNav />
 
       {/* Desktop layout with sidebar */}
-      <div className="flex">
+      <div className="flex min-h-screen">
         {/* Desktop sidebar - hidden on mobile */}
-        <aside className="hidden md:block">
+        <aside className="hidden md:block md:fixed md:h-screen md:left-0 md:top-0">
           <Sidebar />
         </aside>
 
-        {/* Main content area with proper spacing */}
-        <main className="flex-1 overflow-y-auto">
-          <div className="container py-6 px-6 lg:px-8">
+        {/* Main content area with proper spacing and responsive margin */}
+        <main className="flex-1 w-full md:ml-64 lg:ml-72 xl:ml-80 overflow-x-hidden">
+          <div className="container max-w-full py-6 px-4 sm:px-6 lg:px-8">
             {children}
           </div>
         </main>
