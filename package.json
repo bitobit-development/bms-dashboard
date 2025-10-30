@@ -25,7 +25,8 @@
     "telemetry:pm2:stop": "pm2 stop bms-telemetry-generator",
     "telemetry:pm2:restart": "pm2 restart bms-telemetry-generator",
     "telemetry:pm2:logs": "pm2 logs bms-telemetry-generator",
-    "telemetry:pm2:status": "pm2 status bms-telemetry-generator"
+    "telemetry:pm2:status": "pm2 status bms-telemetry-generator",
+    "user:approve-admin": "dotenv -e .env.local -- tsx scripts/approve-admin.ts"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
