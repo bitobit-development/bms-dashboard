@@ -67,7 +67,7 @@ export interface SimulationResult {
  * Default battery configuration values
  */
 const DEFAULT_CONFIG: Omit<BatteryConfig, 'nominalVoltage' | 'capacityKwh'> = {
-  minSoc: 0.20, // 20%
+  minSoc: 0.30, // 30% - minimum safe discharge level
   maxSoc: 0.95, // 95%
   maxChargeRateC: 0.5, // 0.5C charge rate
   maxDischargeRateC: 1.0, // 1C discharge rate

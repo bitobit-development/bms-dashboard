@@ -308,8 +308,11 @@ export class TelemetryGenerator {
     // Calculate grid power (positive = import, negative = export)
     const gridPowerKw = simulation.gridImportKw - simulation.gridExportKw
 
-    // Calculate battery power (negative = charging, positive = discharging)
-    const batteryPowerKw = solarPowerKw - loadPowerKw - gridPowerKw
+    // Calculate battery power from energy balance
+    // Positive = discharging, Negative = charging
+    // Energy balance: Solar + Battery Discharge = Load + Grid Export
+    // Therefore: Battery Power = Load + Grid Export - Solar - Grid Import
+    const batteryPowerKw = loadPowerKw + simulation.gridExportKw - solarPowerKw - simulation.gridImportKw
 
     // Calculate energy for the interval
     const durationHours = this.config.intervalMinutes / 60
