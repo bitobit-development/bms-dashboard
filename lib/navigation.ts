@@ -1,6 +1,7 @@
 import {
   LayoutDashboard,
   Building2,
+  Map,
   BarChart3,
   AlertCircle,
   FileText,
@@ -39,6 +40,11 @@ export const mainNavigation: NavSection[] = [
         title: 'Sites',
         href: '/dashboard/sites',
         icon: Building2,
+      },
+      {
+        title: 'Map View',
+        href: '/dashboard/sites/map',
+        icon: Map,
       },
       {
         title: 'Analytics',

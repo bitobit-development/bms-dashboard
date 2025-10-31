@@ -96,6 +96,12 @@ src/
     └── email.ts         # Email notification system
 
 components/
+├── auth/                # Authentication UI components
+│   ├── pending-approval.tsx      # Pending user approval page
+│   ├── already-signed-in.tsx     # Custom "already signed in" page
+│   ├── account-inactive.tsx      # Inactive account page
+│   ├── login-loading.tsx         # Consistent loading component
+│   └── login-form.tsx            # Login form wrapper
 ├── dashboard/           # Dashboard-specific components
 │   ├── nav.tsx         # Navigation bar
 │   ├── sidebar.tsx     # Sidebar navigation
@@ -305,7 +311,11 @@ pnpm telemetry:5min           # Generate 5min of data
 pnpm telemetry:check          # Verify data
 pnpm telemetry:pm2:start      # Start continuous generation
 pnpm telemetry:pm2:logs       # View generation logs
+pnpm telemetry:pm2:status     # Check PM2 status
+pnpm telemetry:pm2:stop       # Stop generation
 ```
+
+**PM2 Setup Note**: PM2 configuration (`ecosystem.config.js`) uses `dotenv-cli` to load `.env.local`. Ensure PM2 is installed globally: `npm install -g pm2`
 
 ## Important Notes
 
@@ -325,6 +335,8 @@ pnpm telemetry:pm2:logs       # View generation logs
 - Server-only via `stackServerApp` (not `StackProvider`)
 - Client usage via `useUser()` hook requires Suspense boundaries
 - Redirect URLs: `/login`, `/dashboard`, `/`
+- **Type Assertion Required**: Use `(app as any).signOut()` due to Stack Auth v2.8.47 type inference issue
+- Client app configured in `app/stack-client.ts`, server app in `app/stack.ts`
 
 ### Database Considerations
 - Use `DATABASE_URL` (pooled) for queries
@@ -337,6 +349,7 @@ pnpm telemetry:pm2:logs       # View generation logs
 - Missing Suspense boundaries in some components
 - `middleware.ts` deprecation (rename to `proxy.ts` in future)
 - Email notifications log to console (need service configuration)
+- Stack Auth `signOut()` requires type assertion: `(app as any).signOut()`
 
 ## Deployment
 
@@ -349,6 +362,42 @@ pnpm telemetry:pm2:logs       # View generation logs
 - Environment variables synced from Neon
 - Latest: https://bms-dashboard-3d09a3wrc-bit2bits-projects.vercel.app
 
+## Authentication Page Design Pattern
+
+All authentication-related pages follow a consistent design:
+
+**Pattern Structure:**
+```typescript
+<div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 p-4">
+  <Card className="max-w-md w-full">
+    <CardHeader className="text-center space-y-2">
+      <div className="mx-auto w-12 h-12 bg-[color]-100 dark:bg-[color]-900/20 rounded-full flex items-center justify-center mb-2">
+        <Icon className="h-6 w-6 text-[color]-600 dark:text-[color]-400" />
+      </div>
+      <CardTitle className="text-2xl">[Title]</CardTitle>
+      <CardDescription>[Description]</CardDescription>
+    </CardHeader>
+    <CardContent className="space-y-4">
+      {/* Page content */}
+    </CardContent>
+  </Card>
+</div>
+```
+
+**Color Scheme:**
+- 🔵 Blue (Loader2) = Loading/In Progress (`login-loading.tsx`)
+- 🟡 Amber (Clock) = Pending/Waiting (`pending-approval.tsx`)
+- 🟢 Green (CircleCheck) = Success/Active (`already-signed-in.tsx`)
+- 🔴 Red (CircleX) = Error/Inactive (`account-inactive.tsx`)
+
+**Loading States:**
+- `app/loading.tsx` - Root loading
+- `app/(auth)/loading.tsx` - Auth routes loading
+- `app/handler/loading.tsx` - Stack Auth handler loading
+- `app/dashboard/loading.tsx` - Dashboard loading
+
+All loading states use `LoginLoading` component for consistency.
+
 ## Bug Fix Documentation
 
 All bug fixes should be documented in `docs/fix_bugs/` with:
@@ -358,4 +407,9 @@ All bug fixes should be documented in `docs/fix_bugs/` with:
 - Testing instructions
 - Follow-up improvements
 
-See `docs/fix_bugs/user-signup-approval-sync.md` for reference template.
+**Recent Fixes:**
+- `user-signup-approval-sync.md` - User approval workflow implementation
+- `pending-user-bypass-authorization.md` - Fixed pending users accessing dashboard
+- `signup-redirect-already-signed-in.md` - Fixed signup redirect flow
+- `custom-already-signed-in-page.md` - Custom auth page implementation
+- `login-loading-design-inconsistency.md` - Consistent loading states
