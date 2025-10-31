@@ -30,9 +30,11 @@
     "user:sync-stack-id": "dotenv -e .env.local -- tsx scripts/sync-stack-id.ts",
     "user:check": "dotenv -e .env.local -- tsx scripts/check-user.ts",
     "user:list": "dotenv -e .env.local -- tsx scripts/list-users.ts",
+    "import:ndz": "dotenv -e .env.local -- tsx scripts/import-ndz-sites.ts",
     "favicons:generate": "tsx scripts/generate-favicons.ts"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-avatar": "^1.1.10",
     "@radix-ui/react-checkbox": "^1.3.3",
     "@radix-ui/react-dialog": "^1.1.15",
@@ -64,6 +66,7 @@
     "recharts": "^3.3.0",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.3.1",
+    "xlsx": "^0.18.5",
     "zod": "^4.1.12"
   },
   "devDependencies": {

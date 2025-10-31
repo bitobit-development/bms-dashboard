@@ -174,3 +174,124 @@ export async function getSitesForFilter() {
     }
   }
 }
+
+export async function createEquipment(data: {
+  siteId: number
+  type: 'inverter' | 'battery' | 'solar_panel' | 'charge_controller' | 'grid_meter'
+  name: string
+  manufacturer?: string
+  model?: string
+  serialNumber?: string
+  capacity?: number
+  voltage?: number
+  specs?: Record<string, any>
+  status?: 'operational' | 'degraded' | 'maintenance' | 'failed' | 'offline'
+  healthScore?: number
+  installedAt?: Date
+  warrantyExpiresAt?: Date
+}) {
+  try {
+    // TODO: Add authentication and authorization checks
+    // const user = await stackServerApp.getUser()
+    // if (!user) return { success: false, error: 'Not authenticated' }
+
+    const [newEquipment] = await db
+      .insert(equipment)
+      .values({
+        siteId: data.siteId,
+        type: data.type,
+        name: data.name,
+        manufacturer: data.manufacturer || null,
+        model: data.model || null,
+        serialNumber: data.serialNumber || null,
+        capacity: data.capacity || null,
+        voltage: data.voltage || null,
+        specs: data.specs || {},
+        status: data.status || 'operational',
+        healthScore: data.healthScore || null,
+        installedAt: data.installedAt || null,
+        warrantyExpiresAt: data.warrantyExpiresAt || null,
+      })
+      .returning()
+
+    return {
+      success: true,
+      equipment: newEquipment,
+    }
+  } catch (error) {
+    console.error('Error creating equipment:', error)
+    return {
+      success: false,
+      error: 'Failed to create equipment',
+    }
+  }
+}
+
+export async function updateEquipment(
+  equipmentId: number,
+  data: {
+    name?: string
+    manufacturer?: string
+    model?: string
+    serialNumber?: string
+    capacity?: number
+    voltage?: number
+    specs?: Record<string, any>
+    status?: 'operational' | 'degraded' | 'maintenance' | 'failed' | 'offline'
+    healthScore?: number
+    installedAt?: Date
+    lastMaintenanceAt?: Date
+    nextMaintenanceAt?: Date
+    warrantyExpiresAt?: Date
+  }
+) {
+  try {
+    // TODO: Add authentication and authorization checks
+    // const user = await stackServerApp.getUser()
+    // if (!user) return { success: false, error: 'Not authenticated' }
+
+    const [updatedEquipment] = await db
+      .update(equipment)
+      .set({
+        ...data,
+        updatedAt: new Date(),
+      })
+      .where(eq(equipment.id, equipmentId))
+      .returning()
+
+    if (!updatedEquipment) {
+      return { success: false, error: 'Equipment not found' }
+    }
+
+    return {
+      success: true,
+      equipment: updatedEquipment,
+    }
+  } catch (error) {
+    console.error('Error updating equipment:', error)
+    return {
+      success: false,
+      error: 'Failed to update equipment',
+    }
+  }
+}
+
+export async function deleteEquipment(equipmentId: number) {
+  try {
+    // TODO: Add authentication and authorization checks
+    // const user = await stackServerApp.getUser()
+    // if (!user) return { success: false, error: 'Not authenticated' }
+
+    await db.delete(equipment).where(eq(equipment.id, equipmentId))
+
+    return {
+      success: true,
+    }
+  } catch (error) {
+    console.error('Error deleting equipment:', error)
+    return {
+      success: false,
+      error: 'Failed to delete equipment',
+    }
+  }
+}

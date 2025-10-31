@@ -1,13 +1,17 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { formatDistanceToNow, format, isPast } from 'date-fns'
-import { Battery, Zap, Sun, Activity, Gauge, Wrench, AlertCircle, ArrowRight } from 'lucide-react'
+import { Battery, Zap, Sun, Activity, Gauge, Wrench, AlertCircle, ArrowRight, Pencil, Trash2 } from 'lucide-react'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
 import { Skeleton } from '@/components/ui/skeleton'
+import { EquipmentFormDialog } from './equipment-form-dialog'
+import { EquipmentDeleteDialog } from './equipment-delete-dialog'
 import { cn } from '@/lib/utils'
 
 interface Equipment {
@@ -74,6 +78,14 @@ const getHealthTextColor = (health: number) => {
 }
 
 export function EquipmentGrid({ equipment, isLoading = false }: EquipmentGridProps) {
+  const router = useRouter()
+  const [editingEquipment, setEditingEquipment] = useState<Equipment | null>(null)
+  const [deletingEquipment, setDeletingEquipment] = useState<Equipment | null>(null)
+
+  const handleSuccess = () => {
+    router.refresh()
+  }
+
   if (isLoading) {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -224,17 +236,54 @@ export function EquipmentGrid({ equipment, isLoading = false }: EquipmentGridPro
               )}
             </CardContent>
 
-            <CardFooter>
-              <Button asChild className="w-full" variant="outline">
+            <CardFooter className="flex gap-2">
+              <Button asChild className="flex-1" variant="outline" size="sm">
                 <Link href={`/dashboard/equipment/${item.id}`}>
                   View Details
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setEditingEquipment(item)}
+              >
+                <Pencil className="h-4 w-4" />
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setDeletingEquipment(item)}
+              >
+                <Trash2 className="h-4 w-4 text-red-500" />
+              </Button>
             </CardFooter>
           </Card>
         )
       })}
+
+      {/* Edit Dialog */}
+      {editingEquipment && (
+        <EquipmentFormDialog
+          open={!!editingEquipment}
+          onOpenChange={(open) => !open && setEditingEquipment(null)}
+          equipmentId={editingEquipment.id}
+          equipment={editingEquipment}
+          onSuccess={handleSuccess}
+        />
+      )}
+
+      {/* Delete Dialog */}
+      {deletingEquipment && (
+        <EquipmentDeleteDialog
+          open={!!deletingEquipment}
+          onOpenChange={(open) => !open && setDeletingEquipment(null)}
+          equipmentId={deletingEquipment.id}
+          equipmentName={deletingEquipment.name}
+          equipmentType={equipmentLabels[deletingEquipment.type]}
+          onSuccess={handleSuccess}
+        />
+      )}
     </div>
   )
 }

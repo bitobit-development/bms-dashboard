@@ -9,6 +9,7 @@ import { EnergyFlowCanvas, EnergyFlow } from './energy-flow'
 import { LastCheckedDisplay } from './last-checked-display'
 import { MapPin, Sun, Zap, Home, ArrowUpRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { getSiteStatus, getSiteStatusClasses, getStatusIndicator } from '@/src/lib/site-status'
 import type { SiteWithLatestTelemetry } from '@/app/actions/sites'
 
 interface SiteCardProps {
@@ -17,16 +18,19 @@ interface SiteCardProps {
 }
 
 export function SiteCard({ site, className }: SiteCardProps) {
-  const { id, name, status, location, latestReading, batteryCapacityKwh, solarCapacityKw } = site
+  const { id, name, status, location, latestReading, batteryCapacityKwh, solarCapacityKw, lastSeenAt } = site
   const [isHovered, setIsHovered] = useState(false)
 
-  const isOnline = latestReading && Date.now() - new Date(latestReading.timestamp).getTime() < 10 * 60 * 1000
+  // Get detailed site status based on lastSeenAt
+  const siteStatus = getSiteStatus(lastSeenAt)
+  const isOnline = siteStatus.status === 'online'
   const batteryLevel = latestReading?.batteryChargeLevel || 0
   const isCharging = (latestReading?.batteryPowerKw || 0) < 0 // Negative power means charging
 
   const getStatusBadgeColor = () => {
-    if (status === 'active' && isOnline) return 'default'
+    if (siteStatus.status === 'online') return 'default'
     if (status === 'maintenance') return 'secondary'
+    if (siteStatus.status === 'warning') return 'secondary'
     return 'destructive'
   }
 
@@ -137,10 +141,15 @@ export function SiteCard({ site, className }: SiteCardProps) {
               )}
             </div>
             <div className="flex flex-col items-end gap-2">
-              <Badge variant={getStatusBadgeColor()} className={cn(isOnline && 'animate-pulse')}>
-                {isOnline ? 'Online' : status}
-              </Badge>
-              {latestReading && <LastCheckedDisplay timestamp={latestReading.timestamp} />}
+              <div className={getSiteStatusClasses(siteStatus.status)}>
+                <span className={getStatusIndicator(siteStatus.status)} />
+                {siteStatus.label}
+              </div>
+              {lastSeenAt && (
+                <div className="text-xs text-muted-foreground" title={siteStatus.description}>
+                  {siteStatus.lastSeenText || 'Never seen'}
+                </div>
+              )}
             </div>
           </div>
         </CardHeader>

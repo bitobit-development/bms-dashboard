@@ -15,8 +15,8 @@
 
 import { eq, desc } from 'drizzle-orm'
 import { db } from '../db'
-import { sites, telemetryReadings } from '../db/schema'
-import type { Site, NewTelemetryReading } from '../db/schema'
+import { sites, telemetryReadings, equipment } from '../db/schema'
+import type { Site, NewTelemetryReading, Equipment } from '../db/schema'
 import { BatterySimulator } from '../lib/battery-simulator'
 import { getDefaultSolarConfig, calculateSolarProduction } from '../lib/solar-calculator'
 import { getLoadProfile, calculateLoadPower } from '../lib/load-simulator'
@@ -41,6 +41,13 @@ export interface GeneratorConfig {
  */
 interface SiteSimulator {
   site: Site
+  equipment: {
+    batteries: Equipment[]
+    inverters: Equipment[]
+    solarPanels: Equipment[]
+    chargeControllers: Equipment[]
+    gridMeters: Equipment[]
+  }
   batterySimulator: BatterySimulator
   solarConfig: ReturnType<typeof getDefaultSolarConfig>
   loadProfile: ReturnType<typeof getLoadProfile>
@@ -170,6 +177,27 @@ export class TelemetryGenerator {
    * Initializes a single site simulator
    */
   private async initializeSiteSimulator(site: Site): Promise<void> {
+    // Query equipment for this site
+    const siteEquipment = await db.query.equipment.findMany({
+      where: eq(equipment.siteId, site.id),
+    })
+
+    // Group equipment by type
+    const batteries = siteEquipment.filter(e => e.type === 'battery')
+    const inverters = siteEquipment.filter(e => e.type === 'inverter')
+    const solarPanels = siteEquipment.filter(e => e.type === 'solar_panel')
+    const chargeControllers = siteEquipment.filter(e => e.type === 'charge_controller')
+    const gridMeters = siteEquipment.filter(e => e.type === 'grid_meter')
+
+    // Calculate total capacities from equipment
+    const totalBatteryCapacity = batteries.length > 0
+      ? calculateTotalBatteryCapacity(batteries)
+      : site.batteryCapacityKwh
+
+    const totalSolarCapacity = solarPanels.length > 0
+      ? calculateTotalSolarCapacity(solarPanels)
+      : site.solarCapacityKw
+
     // Load last telemetry reading to restore battery state
     const lastReading = await db.query.telemetryReadings.findFirst({
       where: eq(telemetryReadings.siteId, site.id),
@@ -187,20 +215,37 @@ export class TelemetryGenerator {
         }
       : undefined
 
-    const batterySimulator = new BatterySimulator(site, initialState)
+    const batterySimulator = new BatterySimulator(
+      { ...site, batteryCapacityKwh: totalBatteryCapacity || site.batteryCapacityKwh },
+      initialState
+    )
 
-    // Get solar and load configurations
-    const solarConfig = getDefaultSolarConfig(site)
+    // Get solar and load configurations with equipment-derived capacities
+    const solarConfig = getDefaultSolarConfig({
+      ...site,
+      solarCapacityKw: totalSolarCapacity || site.solarCapacityKw,
+    })
     const loadProfile = getLoadProfile(site)
 
     this.siteSimulators.set(site.id, {
       site,
+      equipment: {
+        batteries,
+        inverters,
+        solarPanels,
+        chargeControllers,
+        gridMeters,
+      },
       batterySimulator,
       solarConfig,
       loadProfile,
     })
 
-    this.log(`   ✓ ${site.name} (Battery SOC: ${(batterySimulator.getState().soc * 100).toFixed(1)}%)`)
+    this.log(`   ✓ ${site.name}:`)
+    this.log(`      Batteries: ${batteries.length} (${(totalBatteryCapacity || site.batteryCapacityKwh || 0).toFixed(1)}kWh)`)
+    this.log(`      Solar Panels: ${solarPanels.length} (${(totalSolarCapacity || site.solarCapacityKw || 0).toFixed(1)}kW)`)
+    this.log(`      Inverters: ${inverters.length}`)
+    this.log(`      Battery SOC: ${(batterySimulator.getState().soc * 100).toFixed(1)}%`)
   }
 
   /**
@@ -240,7 +285,8 @@ export class TelemetryGenerator {
     timestamp: Date,
     weather: WeatherData
   ): Promise<void> {
-    const { site, batterySimulator, solarConfig, loadProfile } = simulator
+    const { site, equipment, batterySimulator, solarConfig, loadProfile } = simulator
+    const { inverters } = equipment
 
     // Calculate solar production
     const solarPowerKw = calculateSolarProduction(weather, solarConfig, timestamp)
@@ -271,9 +317,8 @@ export class TelemetryGenerator {
     const loadEnergyKwh = loadPowerKw * durationHours
     const gridEnergyKwh = gridPowerKw * durationHours
 
-    // Inverter metrics (simplified: split power between 2 inverters)
-    const inverter1PowerKw = solarPowerKw * 0.5
-    const inverter2PowerKw = solarPowerKw * 0.5
+    // Distribute inverter power based on equipment configuration
+    const inverterPowerDistribution = distributeInverterPower(solarPowerKw, inverters)
     const inverterEfficiency = solarConfig.inverterEfficiency * 100
     const inverterTemp = weather.temperature + 15 // Inverters run warmer
 
@@ -281,7 +326,7 @@ export class TelemetryGenerator {
     const gridVoltage = 230 + (Math.random() * 10 - 5) // 230V ±5V
     const gridFrequency = 50 + (Math.random() * 0.2 - 0.1) // 50Hz ±0.1Hz
 
-    // Create telemetry reading
+    // Create telemetry reading with dynamic inverter fields
     const telemetry: NewTelemetryReading = {
       siteId: site.id,
       timestamp,
@@ -299,13 +344,17 @@ export class TelemetryGenerator {
       solarEnergyKwh,
       solarEfficiency: (solarPowerKw / (solarConfig.panelCapacityKw || 1)) * 100,
 
-      // Inverter metrics
-      inverter1PowerKw,
-      inverter1Efficiency: inverterEfficiency,
-      inverter1Temperature: inverterTemp,
-      inverter2PowerKw,
-      inverter2Efficiency: inverterEfficiency,
-      inverter2Temperature: inverterTemp + (Math.random() * 2 - 1), // Small variance
+      // Dynamic inverter metrics (supports up to 2 inverters in current schema)
+      ...(inverters.length >= 1 && {
+        inverter1PowerKw: inverterPowerDistribution.get(inverters[0].id) || 0,
+        inverter1Efficiency: inverterEfficiency,
+        inverter1Temperature: inverterTemp,
+      }),
+      ...(inverters.length >= 2 && {
+        inverter2PowerKw: inverterPowerDistribution.get(inverters[1].id) || 0,
+        inverter2Efficiency: inverterEfficiency,
+        inverter2Temperature: inverterTemp + (Math.random() * 2 - 1),
+      }),
 
       // Grid metrics
       gridVoltage,
@@ -326,6 +375,12 @@ export class TelemetryGenerator {
 
     // Insert into database
     await db.insert(telemetryReadings).values(telemetry)
+
+    // Update site's lastSeenAt timestamp to track when data was last received
+    await db
+      .update(sites)
+      .set({ lastSeenAt: timestamp })
+      .where(eq(sites.id, site.id))
 
     // Log summary
     this.log(
@@ -401,4 +456,54 @@ export const createTelemetryGenerator = (
     sites: siteIds,
     verbose: true,
   })
+}
+
+/**
+ * Calculate total battery capacity from equipment records
+ *
+ * Only counts batteries that are not failed or offline.
+ */
+function calculateTotalBatteryCapacity(batteries: Equipment[]): number {
+  return batteries
+    .filter(b => b.status !== 'failed' && b.status !== 'offline')
+    .reduce((sum, b) => sum + (b.capacity || 0), 0)
+}
+
+/**
+ * Calculate total solar capacity from equipment records
+ *
+ * Only counts solar panels that are not failed or offline.
+ */
+function calculateTotalSolarCapacity(solarPanels: Equipment[]): number {
+  return solarPanels
+    .filter(s => s.status !== 'failed' && s.status !== 'offline')
+    .reduce((sum, s) => sum + (s.capacity || 0), 0)
+}
+
+/**
+ * Distribute power across inverters proportionally by capacity
+ *
+ * Active inverters receive power proportional to their capacity rating.
+ * Inactive inverters (failed/offline) are excluded from distribution.
+ *
+ * @param totalPowerKw - Total power to distribute
+ * @param inverters - Array of inverter equipment
+ * @returns Map of inverter ID to assigned power (kW)
+ */
+function distributeInverterPower(totalPowerKw: number, inverters: Equipment[]): Map<number, number> {
+  const activeInverters = inverters.filter(
+    i => i.status !== 'failed' && i.status !== 'offline'
+  )
+
+  if (activeInverters.length === 0) return new Map()
+
+  const totalCapacity = activeInverters.reduce((sum, inv) => sum + (inv.capacity || 1), 0)
+  const powerDistribution = new Map<number, number>()
+
+  activeInverters.forEach(inv => {
+    const proportion = (inv.capacity || 1) / totalCapacity
+    powerDistribution.set(inv.id, totalPowerKw * proportion)
+  })
+
+  return powerDistribution
 }
