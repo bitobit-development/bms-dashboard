@@ -268,7 +268,7 @@ export class BatterySimulator {
     const socChange = (energyChangeKwh - selfDischargeKwh) / this.config.capacityKwh
     this.state.soc = Math.max(
       this.config.minSoc,
-      Math.min(this.config.maxSoc, this.state.soc - socChange)
+      Math.min(this.config.maxSoc, this.state.soc + socChange)
     )
 
     // Update voltage based on new SOC

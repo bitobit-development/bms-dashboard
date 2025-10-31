@@ -422,7 +422,19 @@ export class TelemetryGenerator {
         console.warn('   ⚠️  Weather fetch failed, using cached data')
         return getWeatherAtTimestamp(timestamp, this.weatherCache)
       }
-      throw error
+
+      // If no cache available, use default nighttime weather
+      console.warn('   ⚠️  Weather fetch failed, using default weather data')
+      return {
+        timestamp,
+        temperature: 18, // Default nighttime temperature (°C)
+        humidity: 70,
+        cloudCover: 30,
+        windSpeed: 5,
+        precipitation: 0,
+        solarIrradiance: 0, // Nighttime
+        uvIndex: 0,
+      }
     }
   }
 
