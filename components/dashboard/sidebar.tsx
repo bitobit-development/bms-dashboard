@@ -13,6 +13,7 @@ import { Button } from '@/components/ui/button'
 import { mainNavigation, footerNavigation, type NavItem } from '@/lib/navigation'
 import { LiveClock } from './live-clock'
 import { useUser, useStackApp } from '@stackframe/stack'
+import { Logo } from '@/components/ui/logo'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -131,13 +132,7 @@ export function Sidebar() {
     <div className="flex h-screen w-64 lg:w-72 xl:w-80 flex-col border-r bg-background">
       {/* Brand Section */}
       <div className="flex h-16 items-center border-b px-4 lg:px-6">
-        <Link href="/dashboard" className="flex items-center gap-2 font-semibold text-lg">
-          <div className="relative">
-            <Battery className="h-6 w-6 text-purple-600" />
-            <Zap className="h-3 w-3 text-yellow-500 absolute -right-0.5 -top-0.5" />
-          </div>
-          <span>BMS Dashboard</span>
-        </Link>
+        <Logo size="md" showText={true} className="flex-1" />
       </div>
 
       {/* Live Clock */}
