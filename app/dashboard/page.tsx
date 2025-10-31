@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 import { SiteCard } from '@/components/dashboard/site-card'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -10,8 +10,13 @@ import { RefreshCw, Activity, Battery, Sun, Home, AlertCircle } from 'lucide-rea
 import { useRealtimeData } from '@/hooks/use-realtime-data'
 import { getSites, getSystemStats } from '@/app/actions/sites'
 import { formatDistanceToNow } from 'date-fns'
+import { syncUserToDatabase } from '@/src/lib/actions/users'
 
 export default function DashboardPage() {
+  // Sync user to database on mount (for new signups)
+  useEffect(() => {
+    syncUserToDatabase().catch(console.error)
+  }, [])
   const user = { displayName: 'Admin User' }
 
   const fetchSitesData = useCallback(async () => {

@@ -26,7 +26,10 @@
     "telemetry:pm2:restart": "pm2 restart bms-telemetry-generator",
     "telemetry:pm2:logs": "pm2 logs bms-telemetry-generator",
     "telemetry:pm2:status": "pm2 status bms-telemetry-generator",
-    "user:approve-admin": "dotenv -e .env.local -- tsx scripts/approve-admin.ts"
+    "user:approve-admin": "dotenv -e .env.local -- tsx scripts/approve-admin.ts",
+    "user:sync-stack-id": "dotenv -e .env.local -- tsx scripts/sync-stack-id.ts",
+    "user:check": "dotenv -e .env.local -- tsx scripts/check-user.ts",
+    "user:list": "dotenv -e .env.local -- tsx scripts/list-users.ts"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",

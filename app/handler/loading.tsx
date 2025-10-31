@@ -1,5 +1,5 @@
 import { LoginLoading } from '@/components/auth/login-loading'
 
-export default function DashboardLoading() {
+export default function HandlerLoading() {
   return <LoginLoading />
 }

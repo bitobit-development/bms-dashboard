@@ -5,7 +5,9 @@ export const stackServerApp = new StackServerApp({
   tokenStore: "nextjs-cookie",
   urls: {
     signIn: "/login",
+    signUp: "/handler/sign-up",
     afterSignIn: "/dashboard",
+    afterSignUp: "/dashboard", // Redirect to dashboard to trigger pending approval check
     afterSignOut: "/login",
     home: "/",
   },

@@ -25,9 +25,9 @@ module.exports = {
       // Application name
       name: 'bms-telemetry-generator',
 
-      // Script to run
-      script: 'tsx',
-      args: 'src/scripts/run-telemetry-generator.ts 5',
+      // Script to run (use dotenv-cli to load .env.local)
+      script: './node_modules/.bin/dotenv',
+      args: '-e .env.local -- tsx src/scripts/run-telemetry-generator.ts 5',
 
       // Interpreter mode
       interpreter: 'none',
