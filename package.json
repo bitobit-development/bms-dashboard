@@ -29,7 +29,8 @@
     "user:approve-admin": "dotenv -e .env.local -- tsx scripts/approve-admin.ts",
     "user:sync-stack-id": "dotenv -e .env.local -- tsx scripts/sync-stack-id.ts",
     "user:check": "dotenv -e .env.local -- tsx scripts/check-user.ts",
-    "user:list": "dotenv -e .env.local -- tsx scripts/list-users.ts"
+    "user:list": "dotenv -e .env.local -- tsx scripts/list-users.ts",
+    "favicons:generate": "tsx scripts/generate-favicons.ts"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
@@ -71,10 +72,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/sharp": "^0.32.0",
     "dotenv-cli": "^11.0.0",
     "drizzle-kit": "^0.31.6",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
+    "sharp": "^0.34.4",
     "tailwindcss": "^4",
     "tsx": "^4.20.6",
     "tw-animate-css": "^1.4.0",
