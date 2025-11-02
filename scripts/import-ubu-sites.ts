@@ -191,7 +191,6 @@ async function main() {
         subscriptionTier: 'enterprise',
         settings: {
           timezone: 'Africa/Johannesburg',
-          currency: 'ZAR',
           alertEmail: ['alerts@umgungundlovu.gov.za'],
           dataRetentionDays: 365,
         },

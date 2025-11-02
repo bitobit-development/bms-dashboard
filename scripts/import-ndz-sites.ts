@@ -172,7 +172,6 @@ async function main() {
         subscriptionTier: 'enterprise',
         settings: {
           timezone: 'Africa/Johannesburg',
-          currency: 'ZAR',
           alertEmail: ['alerts@ndz.gov.za'],
           dataRetentionDays: 365,
         },

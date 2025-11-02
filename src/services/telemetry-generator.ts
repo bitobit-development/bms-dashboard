@@ -425,6 +425,12 @@ export class TelemetryGenerator {
 
       // If no cache available, use default nighttime weather
       console.warn('   ⚠️  Weather fetch failed, using default weather data')
+      const defaultDate = new Date(timestamp)
+      const sunrise = new Date(defaultDate)
+      sunrise.setHours(6, 0, 0, 0) // 6:00 AM
+      const sunset = new Date(defaultDate)
+      sunset.setHours(18, 0, 0, 0) // 6:00 PM
+
       return {
         timestamp,
         temperature: 18, // Default nighttime temperature (°C)
@@ -434,6 +440,9 @@ export class TelemetryGenerator {
         precipitation: 0,
         solarIrradiance: 0, // Nighttime
         uvIndex: 0,
+        sunrise,
+        sunset,
+        weatherCondition: 'clear' as const,
       }
     }
   }
