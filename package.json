@@ -31,6 +31,9 @@
     "user:check": "dotenv -e .env.local -- tsx scripts/check-user.ts",
     "user:list": "dotenv -e .env.local -- tsx scripts/list-users.ts",
     "import:ndz": "dotenv -e .env.local -- tsx scripts/import-ndz-sites.ts",
+    "import:ubu": "dotenv -e .env.local -- tsx scripts/import-ubu-sites.ts",
+    "import:umz": "dotenv -e .env.local -- tsx scripts/import-umz-sites.ts",
+    "import:verify": "dotenv -e .env.local -- tsx scripts/verify-ubu-umz-import.ts",
     "favicons:generate": "tsx scripts/generate-favicons.ts"
   },
   "dependencies": {
