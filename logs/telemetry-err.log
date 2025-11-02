@@ -1,0 +1,1762 @@
+2025-10-31T08:35:41: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:41:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:41:         ^
+2025-10-31T08:35:41: 
+2025-10-31T08:35:41: 
+2025-10-31T08:35:41: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:41:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:41:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:41:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:41:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:41:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:41:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:41:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:41:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:41:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:41:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:41: 
+2025-10-31T08:35:41: Node.js v24.8.0
+2025-10-31T08:35:42: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:42:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:42:         ^
+2025-10-31T08:35:42: 
+2025-10-31T08:35:42: 
+2025-10-31T08:35:42: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:42:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:42:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:42:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:42:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:42:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:42:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:42:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:42:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:42:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:42:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:42: 
+2025-10-31T08:35:42: Node.js v24.8.0
+2025-10-31T08:35:43: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:43:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:43:         ^
+2025-10-31T08:35:43: 
+2025-10-31T08:35:43: 
+2025-10-31T08:35:43: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:43:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:43:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:43:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:43:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:43:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:43:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:43:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:43:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:43:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:43:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:43: 
+2025-10-31T08:35:43: Node.js v24.8.0
+2025-10-31T08:35:44: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:44:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:44:         ^
+2025-10-31T08:35:44: 
+2025-10-31T08:35:44: 
+2025-10-31T08:35:44: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:44:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:44:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:44:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:44:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:44:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:44:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:44:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:44:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:44:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:44:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:44: 
+2025-10-31T08:35:44: Node.js v24.8.0
+2025-10-31T08:35:45: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:45:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:45:         ^
+2025-10-31T08:35:45: 
+2025-10-31T08:35:45: 
+2025-10-31T08:35:45: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:45:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:45:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:45:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:45:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:45:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:45:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:45:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:45:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:45:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:45:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:45: 
+2025-10-31T08:35:45: Node.js v24.8.0
+2025-10-31T08:35:47: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:47:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:47:         ^
+2025-10-31T08:35:47: 
+2025-10-31T08:35:47: 
+2025-10-31T08:35:47: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:47:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:47:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:47:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:47:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:47:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:47:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:47:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:47:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:47:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:47:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:47: 
+2025-10-31T08:35:47: Node.js v24.8.0
+2025-10-31T08:35:48: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:48:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:48:         ^
+2025-10-31T08:35:48: 
+2025-10-31T08:35:48: 
+2025-10-31T08:35:48: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:48:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:48:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:48:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:48:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:48:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:48:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:48:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:48:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:48:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:48:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:48: 
+2025-10-31T08:35:48: Node.js v24.8.0
+2025-10-31T08:35:51: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:51:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:51:         ^
+2025-10-31T08:35:51: 
+2025-10-31T08:35:51: 
+2025-10-31T08:35:51: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:51:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:51:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:51:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:51:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:51:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:51:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:51:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:51:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:51:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:51:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:51: 
+2025-10-31T08:35:51: Node.js v24.8.0
+2025-10-31T08:35:53: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:53:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:53:         ^
+2025-10-31T08:35:53: 
+2025-10-31T08:35:53: 
+2025-10-31T08:35:53: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:53:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:53:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:53:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:53:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:53:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:53:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:53:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:53:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:53:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:53:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:53: 
+2025-10-31T08:35:53: Node.js v24.8.0
+2025-10-31T08:35:57: /Users/haim/Projects/bms-dashboard/src/db/index.ts:12
+2025-10-31T08:35:57:   throw new Error('DATABASE_URL environment variable is not set')
+2025-10-31T08:35:57:         ^
+2025-10-31T08:35:57: 
+2025-10-31T08:35:57: 
+2025-10-31T08:35:57: Error: DATABASE_URL environment variable is not set
+2025-10-31T08:35:57:     at postgres (/Users/haim/Projects/bms-dashboard/src/db/index.ts:12:9)
+2025-10-31T08:35:57:     at Object.<anonymous> (/Users/haim/Projects/bms-dashboard/src/db/index.ts:23:45)
+2025-10-31T08:35:57:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2025-10-31T08:35:57:     at Object.transformer (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+2025-10-31T08:35:57:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2025-10-31T08:35:57:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2025-10-31T08:35:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-31T08:35:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2025-10-31T08:35:57:     at Module.require (node:internal/modules/cjs/loader:1503:12)
+2025-10-31T08:35:57:     at require (node:internal/modules/helpers:152:16)
+2025-10-31T08:35:57: 
+2025-10-31T08:35:57: Node.js v24.8.0
+2025-10-31T09:04:01: (node:75050) TimeoutNegativeWarning: -1480069.71029136 is a negative number.
+2025-10-31T09:04:01: Timeout duration was set to 1.
+2025-10-31T09:04:01: (Use `node --trace-warnings ...` to show where the warning was created)
+2025-10-31T15:31:17:    ❌ Failed to generate for site 4: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-10-31T15:31:17: params: 4,2025-10-31T13:20:10.011Z,497.8885438199983,74.15920980352774,20,27.020861393455597,97.98335283201817,36.92302097992017,53.507390321946815,4.458949193495568,35.67159354796454,26.753695160973407,97,37.00083425,26.753695160973407,97,37.341617285681984,234.1424050886834,50.08107645966078,0,0,16.58436934202665,1.3820307785022208,{"dataQuality":"good","weatherCondition":"partly_cloudy"}
+2025-10-31T15:31:17:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-10-31T15:31:17:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T15:31:17:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:328:5)
+2025-10-31T15:31:17:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:221:11) {
+2025-10-31T15:31:17:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-10-31T15:31:17:   params: [
+2025-10-31T15:31:17:     4,
+2025-10-31T15:31:17:     '2025-10-31T13:20:10.011Z',
+2025-10-31T15:31:17:     497.8885438199983,
+2025-10-31T15:31:17:     74.15920980352774,
+2025-10-31T15:31:17:     20,
+2025-10-31T15:31:17:     27.020861393455597,
+2025-10-31T15:31:17:     97.98335283201817,
+2025-10-31T15:31:17:     36.92302097992017,
+2025-10-31T15:31:17:     53.507390321946815,
+2025-10-31T15:31:17:     4.458949193495568,
+2025-10-31T15:31:17:     35.67159354796454,
+2025-10-31T15:31:17:     26.753695160973407,
+2025-10-31T15:31:17:     97,
+2025-10-31T15:31:17:     37.00083425,
+2025-10-31T15:31:17:     26.753695160973407,
+2025-10-31T15:31:17:     97,
+2025-10-31T15:31:17:     37.341617285681984,
+2025-10-31T15:31:17:     234.1424050886834,
+2025-10-31T15:31:17:     50.08107645966078,
+2025-10-31T15:31:17:     0,
+2025-10-31T15:31:17:     0,
+2025-10-31T15:31:17:     16.58436934202665,
+2025-10-31T15:31:17:     1.3820307785022208,
+2025-10-31T15:31:17:     '{"dataQuality":"good","weatherCondition":"partly_cloudy"}'
+2025-10-31T15:31:17:   ],
+2025-10-31T15:31:17:   cause: Error: read ECONNRESET
+2025-10-31T15:31:17:       at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-10-31T15:31:17:     errno: -54,
+2025-10-31T15:31:17:     code: 'ECONNRESET',
+2025-10-31T15:31:17:     syscall: 'read'
+2025-10-31T15:31:17:   }
+2025-10-31T15:31:17: }
+2025-10-31T15:31:17: 
+2025-10-31T15:31:17: ❌ Unhandled rejection: Error: read ECONNRESET
+2025-10-31T15:31:17:     at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-10-31T15:31:17:   errno: -54,
+2025-10-31T15:31:17:   code: 'ECONNRESET',
+2025-10-31T15:31:17:   syscall: 'read'
+2025-10-31T15:31:17: }
+2025-10-31T16:48:23: (node:27173) TimeoutNegativeWarning: -4588671.283658202 is a negative number.
+2025-10-31T16:48:23: Timeout duration was set to 1.
+2025-10-31T16:48:23: (Use `node --trace-warnings ...` to show where the warning was created)
+2025-10-31T17:34:54:    ❌ Failed to generate for site 5: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-10-31T17:34:54: params: 5,2025-10-31T15:23:43.560Z,497.8915634845041,-0.5688081919248966,20.006752745002508,35.1871956169953,97.98288867651551,-44.77320380362603,7.913907293628122,0.6594922744690102,2.6379690978760406,3.956953646814061,97,35.43004666666667,3.956953646814061,97,35.82394858771517,228.62083433833914,50.0077804208061,22.244999501812877,1.8537499584844064,30.44211159544128,2.53684263295344,{"dataQuality":"good","weatherCondition":"cloudy"}
+2025-10-31T17:34:54:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-10-31T17:34:54:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T17:34:54:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:328:5)
+2025-10-31T17:34:54:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:221:11) {
+2025-10-31T17:34:54:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-10-31T17:34:54:   params: [
+2025-10-31T17:34:54:     5,
+2025-10-31T17:34:54:     '2025-10-31T15:23:43.560Z',
+2025-10-31T17:34:54:     497.8915634845041,
+2025-10-31T17:34:54:     -0.5688081919248966,
+2025-10-31T17:34:54:     20.006752745002508,
+2025-10-31T17:34:54:     35.1871956169953,
+2025-10-31T17:34:54:     97.98288867651551,
+2025-10-31T17:34:54:     -44.77320380362603,
+2025-10-31T17:34:54:     7.913907293628122,
+2025-10-31T17:34:54:     0.6594922744690102,
+2025-10-31T17:34:54:     2.6379690978760406,
+2025-10-31T17:34:54:     3.956953646814061,
+2025-10-31T17:34:54:     97,
+2025-10-31T17:34:54:     35.43004666666667,
+2025-10-31T17:34:54:     3.956953646814061,
+2025-10-31T17:34:54:     97,
+2025-10-31T17:34:54:     35.82394858771517,
+2025-10-31T17:34:54:     228.62083433833914,
+2025-10-31T17:34:54:     50.0077804208061,
+2025-10-31T17:34:54:     22.244999501812877,
+2025-10-31T17:34:54:     1.8537499584844064,
+2025-10-31T17:34:54:     30.44211159544128,
+2025-10-31T17:34:54:     2.53684263295344,
+2025-10-31T17:34:54:     '{"dataQuality":"good","weatherCondition":"cloudy"}'
+2025-10-31T17:34:54:   ],
+2025-10-31T17:34:54:   cause: Error: read ECONNRESET
+2025-10-31T17:34:54:       at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-10-31T17:34:54:     errno: -54,
+2025-10-31T17:34:54:     code: 'ECONNRESET',
+2025-10-31T17:34:54:     syscall: 'read'
+2025-10-31T17:34:54:   }
+2025-10-31T17:34:54: }
+2025-10-31T22:03:22: (node:68109) TimeoutNegativeWarning: -2680083.0162977246 is a negative number.
+2025-10-31T22:03:22: Timeout duration was set to 1.
+2025-10-31T22:03:22: (Use `node --trace-warnings ...` to show where the warning was created)
+2025-10-31T22:49:56: (node:95408) TimeoutNegativeWarning: -2680108.1847252916 is a negative number.
+2025-10-31T22:49:56: Timeout duration was set to 1.
+2025-10-31T22:49:56: (Use `node --trace-warnings ...` to show where the warning was created)
+2025-10-31T23:04:57: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:04:57:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:04:57:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:04:57:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:04:57:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:04:57:    ⚠️  Weather fetch failed, using cached data
+2025-10-31T23:09:57: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:09:57:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:09:57:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:09:57:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:09:57:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:09:57:    ⚠️  Weather fetch failed, using cached data
+2025-10-31T23:14:59: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:14:59:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:14:59:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:14:59:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:14:59:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:14:59:    ⚠️  Weather fetch failed, using cached data
+2025-10-31T23:19:54: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:19:54:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:19:54:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:19:54:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:19:54:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:19:54:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:19:54:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:19:54:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:19:54:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:19:54:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:19:54:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:19:54:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:19:54:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:19:54:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:19:54: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:19:54:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:19:54:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:19:54:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:19:54:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:19:54:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:19:54:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:19:54: 
+2025-10-31T23:19:54: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:19:54:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:19:54:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:19:54:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:19:54:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:19:54:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:19:54:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:17: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:17:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:17:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:17:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:17:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:17:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:17:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:17:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:17:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:17:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:17:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:17:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:17:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:17:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:17: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:17:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:17:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:17:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:17:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:17:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:17:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:17: 
+2025-10-31T23:20:17: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:17:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:17:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:17:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:17:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:17:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:17:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:40: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:40:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:40:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:40:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:40:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:40:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:40:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:40:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:40:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:40:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:40:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:40:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:40:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:40:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:40: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:40:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:40:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:40:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:40:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:40:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:40:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:20:40: 
+2025-10-31T23:20:40: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:20:40:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:20:40:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:20:40:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:20:40:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:20:40:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:20:40:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:02: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:02:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:02:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:02:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:02:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:02:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:02:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:02:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:02:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:02:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:02:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:02:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:02:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:02:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:02: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:02:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:02:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:02:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:02:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:02:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:02:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:02: 
+2025-10-31T23:21:02: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:02:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:02:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:02:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:02:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:02:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:02:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:24: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:24:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:24:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:24:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:24:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:24:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:24:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:24:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:24:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:24:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:24:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:24:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:24:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:24:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:24: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:24:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:24:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:24:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:24:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:24:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:24:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:24: 
+2025-10-31T23:21:24: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:24:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:24:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:24:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:24:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:24:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:24:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:47: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:47:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:47:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:47:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:47:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:47:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:47:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:47:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:47:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:47:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:47:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:47:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:47:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:47:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:47: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:47:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:47:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:47:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:47:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:47:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:47:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:21:47: 
+2025-10-31T23:21:47: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:21:47:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:21:47:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:21:47:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:21:47:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:21:47:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:21:47:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:13: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:13:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:13:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:13:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:13:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:13:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:13:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:13:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:13:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:13:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:13:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:13:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:13:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:13:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:13: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:13:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:13:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:13:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:13:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:13:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:13:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:13: 
+2025-10-31T23:22:13: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:13:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:13:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:13:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:13:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:13:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:13:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:38: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:38:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:38:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:38:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:38:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:38:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:38:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:38:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:38:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:38:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:38:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:38:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:38:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:38:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:38: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:38:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:38:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:38:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:38:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:38:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:38:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:22:38: 
+2025-10-31T23:22:38: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:22:38:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:22:38:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:22:38:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:22:38:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:22:38:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:22:38:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:04: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:04:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:04: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:04: 
+2025-10-31T23:23:04: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:30: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:30:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:30: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:30: 
+2025-10-31T23:23:30: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:59: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:59:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:59:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:59:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:59:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:59:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:59:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:59:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:59:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:59:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:59:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:59:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:59:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:59:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:59: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:59:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:59:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:59:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:59:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:59:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:59:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:23:59: 
+2025-10-31T23:23:59: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:23:59:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:23:59:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:23:59:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:23:59:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:23:59:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:23:59:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:24:30: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:24:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:24:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:24:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:24:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:24:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:24:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:24:30:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:24:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:24:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:24:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:24:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:24:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:24:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:24:30: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:24:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:24:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:24:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:24:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:24:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:24:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:24:30: 
+2025-10-31T23:24:30: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:24:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:24:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:24:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:24:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:24:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:24:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:04: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:04:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:04: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:04: 
+2025-10-31T23:25:04: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:04:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:04:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:04:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:04:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:04:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:04:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:26: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:26:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:26:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:26:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:26:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:26:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:26:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:26:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:26:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:26:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:26:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:26:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:26:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:26:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:26: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:26:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:26:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:26:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:26:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:26:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:26:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:26: 
+2025-10-31T23:25:26: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:26:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:26:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:26:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:26:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:26:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:26:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:49: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:49:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:49:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:49:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:49:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:49:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:49:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:49:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:49:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:49:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:49:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:49:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:49:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:49:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:49: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:49:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:49:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:49:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:49:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:49:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:49:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:25:49: 
+2025-10-31T23:25:49: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:25:49:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:25:49:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:25:49:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:25:49:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:25:49:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:25:49:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:12:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:12:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:12:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:12:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:12:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:12: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:12:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:12:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:12: 
+2025-10-31T23:26:12: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:12:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:12:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:33: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:33:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:33:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:33:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:33:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:33:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:33:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:33:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:33:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:33:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:33:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:33:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:33:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:33:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:33: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:33:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:33:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:33:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:33:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:33:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:33:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:33: 
+2025-10-31T23:26:33: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:33:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:33:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:33:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:33:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:33:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:33:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:56: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:56:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:56:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:56:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:56:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:56:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:56:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:56:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:56:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:56:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:56:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:56:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:56:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:56:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:56: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:56:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:56:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:56:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:56:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:56:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:56:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:26:56: 
+2025-10-31T23:26:56: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:26:56:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:26:56:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:26:56:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:26:56:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:26:56:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:26:56:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:19: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:19:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:19:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:19:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:19:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:19:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:19:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:19:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:19:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:19:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:19:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:19:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:19:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:19:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:19: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:19:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:19:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:19:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:19:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:19:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:19:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:19: 
+2025-10-31T23:27:19: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:19:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:19:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:19:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:19:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:19:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:19:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:42: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:42:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:42: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:27:42: 
+2025-10-31T23:27:42: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:27:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:27:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:27:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:27:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:27:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:27:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:06: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:06:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:06: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:06: 
+2025-10-31T23:28:06: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:30: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:30:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:30: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:28:30: 
+2025-10-31T23:28:30: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:28:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:28:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:28:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:28:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:28:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:28:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:18: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:18:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:18:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:18:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:18:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:18:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:18:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:18:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:18:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:18:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:18:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:18:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:18:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:18:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:18: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:18:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:18:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:18:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:18:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:18:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:18:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:18: 
+2025-10-31T23:29:18: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:18:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:18:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:18:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:18:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:18:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:18:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:42: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:42:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:42: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:29:42: 
+2025-10-31T23:29:42: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:29:42:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:29:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:29:42:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:29:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:29:42:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:29:42:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:30:06: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:30:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:30:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:30:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:30:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:30:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:30:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:30:06:    ❌ Weather fetch failed: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:30:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:30:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:30:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:30:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:30:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:30:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:30:06: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:30:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:30:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:30:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:30:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:30:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:30:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:30:06: 
+2025-10-31T23:30:06: ❌ Failed to start generator: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:30:06:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:30:06:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:30:06:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:30:06:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:30:06:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:30:06:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:30:30: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:30:30:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:30:30:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:30:30:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:30:30:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:30:30:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:30:30:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:30:30:    ⚠️  Weather fetch failed, using default weather data
+2025-10-31T23:35:50: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:35:50:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:35:50:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:35:50:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:35:50:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:35:50:    ⚠️  Weather fetch failed, using default weather data
+2025-10-31T23:39:53: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:39:53:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:39:53:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:39:53:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:39:53:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:39:53:     at async TelemetryGenerator.start (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:89:7)
+2025-10-31T23:39:53:     at async main (/Users/haim/Projects/bms-dashboard/src/scripts/run-telemetry-generator.ts:75:5)
+2025-10-31T23:39:53:    ⚠️  Weather fetch failed, using default weather data
+2025-10-31T23:45:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:45:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:45:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:45:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:45:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:45:12:    ⚠️  Weather fetch failed, using default weather data
+2025-10-31T23:50:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:50:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:50:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:50:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:50:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:50:12:    ⚠️  Weather fetch failed, using default weather data
+2025-10-31T23:55:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-10-31T23:55:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-10-31T23:55:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:55:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-10-31T23:55:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-10-31T23:55:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:00:11: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:00:11:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:00:11:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:00:11:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:00:11:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:00:11:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:05:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:05:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:05:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:05:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:05:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:05:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:10:11: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:10:11:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:10:11:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:10:11:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:10:11:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:10:11:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:15:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:15:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:15:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:15:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:15:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:15:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:20:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:20:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:20:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:20:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:20:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:20:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:25:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:25:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:25:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:25:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:25:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:25:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:25:12: (node:74364) TimeoutNegativeWarning: -2681176.6884941463 is a negative number.
+2025-11-01T00:25:12: Timeout duration was set to 1.
+2025-11-01T00:25:12: (Use `node --trace-warnings ...` to show where the warning was created)
+2025-11-01T00:30:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:30:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:30:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:30:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:30:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:30:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:35:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:35:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:35:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:35:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:35:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:35:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:40:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:40:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:40:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:40:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:40:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:40:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:45:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:45:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:45:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:45:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:45:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:45:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:50:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:50:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:50:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:50:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:50:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:50:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T00:55:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T00:55:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T00:55:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:55:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T00:55:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T00:55:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T01:00:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T01:00:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T01:00:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T01:00:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T01:00:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T01:00:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T01:05:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T01:05:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T01:05:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T01:05:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T01:05:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T01:05:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T01:10:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T01:10:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T01:10:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T01:10:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T01:10:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T01:10:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T01:15:12: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T01:15:12:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T01:15:12:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T01:15:12:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T01:15:12:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T01:15:12:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T01:20:11: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-01T01:20:11:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-01T01:20:11:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T01:20:11:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-01T01:20:11:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-01T01:20:11:    ⚠️  Weather fetch failed, using default weather data
+2025-11-01T04:03:18:    ❌ Failed to generate for site 58: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T04:03:18: params: 58,2025-11-01T01:30:37.670Z,407.5178927434954,-2.8796771353107395,54.01282022407737,22.676031509281945,97.99703252472659,1.1735199579634579,0,0,0,0,97,28.253139166666667,0,97,28.730558303093936,226.78824808150182,49.98635070309181,0,0,1.1735199579634579,0.09779332983028816,{"dataQuality":"good","weatherCondition":"clear"}
+2025-11-01T04:03:18:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T04:03:18:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T04:03:18:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T04:03:18:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T04:03:18:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T04:03:18:   params: [
+2025-11-01T04:03:18:     58,
+2025-11-01T04:03:18:     '2025-11-01T01:30:37.670Z',
+2025-11-01T04:03:18:     407.5178927434954,
+2025-11-01T04:03:18:     -2.8796771353107395,
+2025-11-01T04:03:18:     54.01282022407737,
+2025-11-01T04:03:18:     22.676031509281945,
+2025-11-01T04:03:18:     97.99703252472659,
+2025-11-01T04:03:18:     1.1735199579634579,
+2025-11-01T04:03:18:     0,
+2025-11-01T04:03:18:     0,
+2025-11-01T04:03:18:     0,
+2025-11-01T04:03:18:     0,
+2025-11-01T04:03:18:     97,
+2025-11-01T04:03:18:     28.253139166666667,
+2025-11-01T04:03:18:     0,
+2025-11-01T04:03:18:     97,
+2025-11-01T04:03:18:     28.730558303093936,
+2025-11-01T04:03:18:     226.78824808150182,
+2025-11-01T04:03:18:     49.98635070309181,
+2025-11-01T04:03:18:     0,
+2025-11-01T04:03:18:     0,
+2025-11-01T04:03:18:     1.1735199579634579,
+2025-11-01T04:03:18:     0.09779332983028816,
+2025-11-01T04:03:18:     '{"dataQuality":"good","weatherCondition":"clear"}'
+2025-11-01T04:03:18:   ],
+2025-11-01T04:03:18:   cause: Error: read ECONNRESET
+2025-11-01T04:03:18:       at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-11-01T04:03:18:     errno: -54,
+2025-11-01T04:03:18:     code: 'ECONNRESET',
+2025-11-01T04:03:18:     syscall: 'read'
+2025-11-01T04:03:18:   }
+2025-11-01T04:03:18: }
+2025-11-01T04:14:24:    ❌ Failed to generate for site 9: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T04:14:24: params: 9,2025-11-01T02:03:18.139Z,407.5041763146204,-2.745302092094505,53.949834397339956,22.60094146603915,97.99697132737374,1.1187220677737755,0,0,0,0,97,28.411007722222223,0,97,29.24364619693579,230.40696156667644,50.00188826234509,0,0,1.1187220677737755,0.09322683898114795,{"dataQuality":"good","weatherCondition":"clear"}
+2025-11-01T04:14:24:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T04:14:24:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T04:14:24:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T04:14:24:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T04:14:24:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T04:14:24:   params: [
+2025-11-01T04:14:24:     9,
+2025-11-01T04:14:24:     '2025-11-01T02:03:18.139Z',
+2025-11-01T04:14:24:     407.5041763146204,
+2025-11-01T04:14:24:     -2.745302092094505,
+2025-11-01T04:14:24:     53.949834397339956,
+2025-11-01T04:14:24:     22.60094146603915,
+2025-11-01T04:14:24:     97.99697132737374,
+2025-11-01T04:14:24:     1.1187220677737755,
+2025-11-01T04:14:24:     0,
+2025-11-01T04:14:24:     0,
+2025-11-01T04:14:24:     0,
+2025-11-01T04:14:24:     0,
+2025-11-01T04:14:24:     97,
+2025-11-01T04:14:24:     28.411007722222223,
+2025-11-01T04:14:24:     0,
+2025-11-01T04:14:24:     97,
+2025-11-01T04:14:24:     29.24364619693579,
+2025-11-01T04:14:24:     230.40696156667644,
+2025-11-01T04:14:24:     50.00188826234509,
+2025-11-01T04:14:24:     0,
+2025-11-01T04:14:24:     0,
+2025-11-01T04:14:24:     1.1187220677737755,
+2025-11-01T04:14:24:     0.09322683898114795,
+2025-11-01T04:14:24:     '{"dataQuality":"good","weatherCondition":"clear"}'
+2025-11-01T04:14:24:   ],
+2025-11-01T04:14:24:   cause: Error: read ECONNRESET
+2025-11-01T04:14:24:       at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-11-01T04:14:24:     errno: -54,
+2025-11-01T04:14:24:     code: 'ECONNRESET',
+2025-11-01T04:14:24:     syscall: 'read'
+2025-11-01T04:14:24:   }
+2025-11-01T04:14:24: }
+2025-11-01T04:49:35:    ❌ Failed to generate for site 24: DrizzleQueryError: Failed query: update "sites" set "last_seen_at" = $1 where "sites"."id" = $2
+2025-11-01T04:49:35: params: 2025-11-01T02:44:19.818Z,24
+2025-11-01T04:49:35:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T04:49:35:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T04:49:35:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:383:5)
+2025-11-01T04:49:35:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T04:49:35:   query: 'update "sites" set "last_seen_at" = $1 where "sites"."id" = $2',
+2025-11-01T04:49:35:   params: [ '2025-11-01T02:44:19.818Z', 24 ],
+2025-11-01T04:49:35:   cause: Error: write CONNECTION_CLOSED ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech:5432
+2025-11-01T04:49:35:       at TLSSocket.closed (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:444:57)
+2025-11-01T04:49:35:       at TLSSocket.emit (node:events:520:35)
+2025-11-01T04:49:35:       at node:net:346:12
+2025-11-01T04:49:35:       at Socket.done (node:_tls_wrap:649:7)
+2025-11-01T04:49:35:       at Object.onceWrapper (node:events:623:26)
+2025-11-01T04:49:35:       at Socket.emit (node:events:520:35)
+2025-11-01T04:49:35:       at TCP.<anonymous> (node:net:346:12) {
+2025-11-01T04:49:35:     code: 'CONNECTION_CLOSED',
+2025-11-01T04:49:35:     errno: 'CONNECTION_CLOSED',
+2025-11-01T04:49:35:     address: [ 'ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech' ],
+2025-11-01T04:49:35:     port: [ 5432 ]
+2025-11-01T04:49:35:   }
+2025-11-01T04:49:35: }
+2025-11-01T05:25:16:    ❌ Failed to generate for site 28: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T05:25:16: params: 28,2025-11-01T03:19:43.782Z,407.34755309938254,-2.73358336982493,53.23322614536019,22.243372625549668,97.99665998390722,1.1135184968913496,0,0,0,0,97,29.356305166666665,0,97,28.449315553099332,234.07803062407484,49.94255615831753,0,0,1.1135184968913496,0.09279320807427913,{"dataQuality":"good","weatherCondition":"clear"}
+2025-11-01T05:25:16:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T05:25:16:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T05:25:16:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T05:25:16:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T05:25:16:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T05:25:16:   params: [
+2025-11-01T05:25:16:     28,
+2025-11-01T05:25:16:     '2025-11-01T03:19:43.782Z',
+2025-11-01T05:25:16:     407.34755309938254,
+2025-11-01T05:25:16:     -2.73358336982493,
+2025-11-01T05:25:16:     53.23322614536019,
+2025-11-01T05:25:16:     22.243372625549668,
+2025-11-01T05:25:16:     97.99665998390722,
+2025-11-01T05:25:16:     1.1135184968913496,
+2025-11-01T05:25:16:     0,
+2025-11-01T05:25:16:     0,
+2025-11-01T05:25:16:     0,
+2025-11-01T05:25:16:     0,
+2025-11-01T05:25:16:     97,
+2025-11-01T05:25:16:     29.356305166666665,
+2025-11-01T05:25:16:     0,
+2025-11-01T05:25:16:     97,
+2025-11-01T05:25:16:     28.449315553099332,
+2025-11-01T05:25:16:     234.07803062407484,
+2025-11-01T05:25:16:     49.94255615831753,
+2025-11-01T05:25:16:     0,
+2025-11-01T05:25:16:     0,
+2025-11-01T05:25:16:     1.1135184968913496,
+2025-11-01T05:25:16:     0.09279320807427913,
+2025-11-01T05:25:16:     '{"dataQuality":"good","weatherCondition":"clear"}'
+2025-11-01T05:25:16:   ],
+2025-11-01T05:25:16:   cause: Error: write CONNECTION_CLOSED ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech:5432
+2025-11-01T05:25:16:       at TLSSocket.closed (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:444:57)
+2025-11-01T05:25:16:       at TLSSocket.emit (node:events:520:35)
+2025-11-01T05:25:16:       at node:net:346:12
+2025-11-01T05:25:16:       at Socket.done (node:_tls_wrap:649:7)
+2025-11-01T05:25:16:       at Object.onceWrapper (node:events:623:26)
+2025-11-01T05:25:16:       at Socket.emit (node:events:520:35)
+2025-11-01T05:25:16:       at TCP.<anonymous> (node:net:346:12) {
+2025-11-01T05:25:16:     code: 'CONNECTION_CLOSED',
+2025-11-01T05:25:16:     errno: 'CONNECTION_CLOSED',
+2025-11-01T05:25:16:     address: [ 'ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech' ],
+2025-11-01T05:25:16:     port: [ 5432 ]
+2025-11-01T05:25:16:   }
+2025-11-01T05:25:16: }
+2025-11-01T06:12:21:    ❌ Failed to generate for site 24: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T06:12:21: params: 24,2025-11-01T04:01:01.648Z,407.33907129544855,-2.5135754736508,53.194555559963796,22.074668038819116,97.99647255683703,1.023877499067934,0,0,0,0,97,30.963360444444447,0,97,31.55513395190969,230.1666787405737,50.039622644040655,0,0,1.023877499067934,0.08532312492232783,{"dataQuality":"good","weatherCondition":"clear"}
+2025-11-01T06:12:21:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T06:12:21:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T06:12:21:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T06:12:21:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T06:12:21:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T06:12:21:   params: [
+2025-11-01T06:12:21:     24,
+2025-11-01T06:12:21:     '2025-11-01T04:01:01.648Z',
+2025-11-01T06:12:21:     407.33907129544855,
+2025-11-01T06:12:21:     -2.5135754736508,
+2025-11-01T06:12:21:     53.194555559963796,
+2025-11-01T06:12:21:     22.074668038819116,
+2025-11-01T06:12:21:     97.99647255683703,
+2025-11-01T06:12:21:     1.023877499067934,
+2025-11-01T06:12:21:     0,
+2025-11-01T06:12:21:     0,
+2025-11-01T06:12:21:     0,
+2025-11-01T06:12:21:     0,
+2025-11-01T06:12:21:     97,
+2025-11-01T06:12:21:     30.963360444444447,
+2025-11-01T06:12:21:     0,
+2025-11-01T06:12:21:     97,
+2025-11-01T06:12:21:     31.55513395190969,
+2025-11-01T06:12:21:     230.1666787405737,
+2025-11-01T06:12:21:     50.039622644040655,
+2025-11-01T06:12:21:     0,
+2025-11-01T06:12:21:     0,
+2025-11-01T06:12:21:     1.023877499067934,
+2025-11-01T06:12:21:     0.08532312492232783,
+2025-11-01T06:12:21:     '{"dataQuality":"good","weatherCondition":"clear"}'
+2025-11-01T06:12:21:   ],
+2025-11-01T06:12:21:   cause: Error: read ECONNRESET
+2025-11-01T06:12:21:       at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-11-01T06:12:21:     errno: -54,
+2025-11-01T06:12:21:     code: 'ECONNRESET',
+2025-11-01T06:12:21:     syscall: 'read'
+2025-11-01T06:12:21:   }
+2025-11-01T06:12:21: }
+2025-11-01T09:29:19:    ❌ Failed to generate for site 11: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T09:29:19: params: 11,2025-11-01T06:35:18.643Z,407.45992605039055,17.32716500802496,53.746887723612744,21.998066376596395,97.99621563259873,-7.060125372832765,8.899862052861142,0.7416551710717618,29.666206842870473,4.449931026430571,97,36.45885119444445,4.449931026430571,97,36.372779228076794,234.6961387313606,50.01022169293525,0,0,1.8397366800283768,0.1533113900023647,{"dataQuality":"good","weatherCondition":"clear"}
+2025-11-01T09:29:19:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T09:29:19:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T09:29:19:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T09:29:19:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T09:29:19:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T09:29:19:   params: [
+2025-11-01T09:29:19:     11,
+2025-11-01T09:29:19:     '2025-11-01T06:35:18.643Z',
+2025-11-01T09:29:19:     407.45992605039055,
+2025-11-01T09:29:19:     17.32716500802496,
+2025-11-01T09:29:19:     53.746887723612744,
+2025-11-01T09:29:19:     21.998066376596395,
+2025-11-01T09:29:19:     97.99621563259873,
+2025-11-01T09:29:19:     -7.060125372832765,
+2025-11-01T09:29:19:     8.899862052861142,
+2025-11-01T09:29:19:     0.7416551710717618,
+2025-11-01T09:29:19:     29.666206842870473,
+2025-11-01T09:29:19:     4.449931026430571,
+2025-11-01T09:29:19:     97,
+2025-11-01T09:29:19:     36.45885119444445,
+2025-11-01T09:29:19:     4.449931026430571,
+2025-11-01T09:29:19:     97,
+2025-11-01T09:29:19:     36.372779228076794,
+2025-11-01T09:29:19:     234.6961387313606,
+2025-11-01T09:29:19:     50.01022169293525,
+2025-11-01T09:29:19:     0,
+2025-11-01T09:29:19:     0,
+2025-11-01T09:29:19:     1.8397366800283768,
+2025-11-01T09:29:19:     0.1533113900023647,
+2025-11-01T09:29:19:     '{"dataQuality":"good","weatherCondition":"clear"}'
+2025-11-01T09:29:19:   ],
+2025-11-01T09:29:19:   cause: AggregateError [ENETDOWN]: 
+2025-11-01T09:29:19:       at internalConnectMultiple (node:net:1134:18)
+2025-11-01T09:29:19:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T09:29:19:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T09:29:19:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T09:29:19:       at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)
+2025-11-01T09:29:19:       at GetAddrInfoReqWrap.emitLookup [as callback] (node:net:1552:7)
+2025-11-01T09:29:19:       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:134:8) {
+2025-11-01T09:29:19:     code: 'ENETDOWN',
+2025-11-01T09:29:19:     [errors]: [ [Error], [Error], [Error] ]
+2025-11-01T09:29:19:   }
+2025-11-01T09:29:19: }
+2025-11-01T10:10:46:    ❌ Failed to generate for site 46: DrizzleQueryError: Failed query: update "sites" set "last_seen_at" = $1 where "sites"."id" = $2
+2025-11-01T10:10:46: params: 2025-11-01T07:59:23.221Z,46
+2025-11-01T10:10:46:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T10:10:46:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T10:10:46:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:383:5)
+2025-11-01T10:10:46:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T10:10:46:   query: 'update "sites" set "last_seen_at" = $1 where "sites"."id" = $2',
+2025-11-01T10:10:46:   params: [ '2025-11-01T07:59:23.221Z', 46 ],
+2025-11-01T10:10:46:   cause: Error: read ECONNRESET
+2025-11-01T10:10:46:       at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-11-01T10:10:46:     errno: -54,
+2025-11-01T10:10:46:     code: 'ECONNRESET',
+2025-11-01T10:10:46:     syscall: 'read'
+2025-11-01T10:10:46:   }
+2025-11-01T10:10:46: }
+2025-11-01T10:51:42:    ❌ Failed to generate for site 11: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T10:51:42: params: 11,2025-11-01T08:51:42.007Z,409.1143336434075,35.08886272334634,61.594702573475715,22.150144924372146,97.99573467479841,-14.355356691366838,16.965685697989212,1.413807141499101,56.55228565996404,8.482842848994606,97,36.644667444444444,8.482842848994606,97,36.53900794735842,227.11251309180483,50.042618780666295,0,0,2.610329006622374,0.21752741721853114,{"dataQuality":"good","weatherCondition":"partly_cloudy"}
+2025-11-01T10:51:42:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T10:51:42:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T10:51:42:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T10:51:42:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T10:51:42:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T10:51:42:   params: [
+2025-11-01T10:51:42:     11,
+2025-11-01T10:51:42:     '2025-11-01T08:51:42.007Z',
+2025-11-01T10:51:42:     409.1143336434075,
+2025-11-01T10:51:42:     35.08886272334634,
+2025-11-01T10:51:42:     61.594702573475715,
+2025-11-01T10:51:42:     22.150144924372146,
+2025-11-01T10:51:42:     97.99573467479841,
+2025-11-01T10:51:42:     -14.355356691366838,
+2025-11-01T10:51:42:     16.965685697989212,
+2025-11-01T10:51:42:     1.413807141499101,
+2025-11-01T10:51:42:     56.55228565996404,
+2025-11-01T10:51:42:     8.482842848994606,
+2025-11-01T10:51:42:     97,
+2025-11-01T10:51:42:     36.644667444444444,
+2025-11-01T10:51:42:     8.482842848994606,
+2025-11-01T10:51:42:     97,
+2025-11-01T10:51:42:     36.53900794735842,
+2025-11-01T10:51:42:     227.11251309180483,
+2025-11-01T10:51:42:     50.042618780666295,
+2025-11-01T10:51:42:     0,
+2025-11-01T10:51:42:     0,
+2025-11-01T10:51:42:     2.610329006622374,
+2025-11-01T10:51:42:     0.21752741721853114,
+2025-11-01T10:51:42:     '{"dataQuality":"good","weatherCondition":"partly_cloudy"}'
+2025-11-01T10:51:42:   ],
+2025-11-01T10:51:42:   cause: AggregateError [ENETDOWN]: 
+2025-11-01T10:51:42:       at internalConnectMultiple (node:net:1134:18)
+2025-11-01T10:51:42:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T10:51:42:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T10:51:42:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T10:51:42:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T10:51:42:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T10:51:42:       at internalConnectMultiple (node:net:1210:5)
+2025-11-01T10:51:42:       at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)
+2025-11-01T10:51:42:       at GetAddrInfoReqWrap.emitLookup [as callback] (node:net:1552:7)
+2025-11-01T10:51:42:       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:134:8) {
+2025-11-01T10:51:42:     code: 'ENETDOWN',
+2025-11-01T10:51:42:     [errors]: [ [Error], [Error], [Error], [Error], [Error], [Error] ]
+2025-11-01T10:51:42:   }
+2025-11-01T10:51:42: }
+2025-11-01T10:51:51:    ❌ Failed to generate for site 57: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T10:51:51: params: 57,2025-11-01T08:40:32.768Z,408.60628482681386,31.46841488918646,59.1278567361611,22.09809315133825,97.99587389352511,-12.858192097259273,15.511683465592277,1.2926402887993564,51.705611551974265,7.755841732796139,97,36.57030755555556,7.755841732796139,97,37.402261557568224,234.86950658059726,50.082273456030045,0,0,2.653491368333003,0.22112428069441692,{"dataQuality":"good","weatherCondition":"partly_cloudy"}
+2025-11-01T10:51:51:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T10:51:51:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T10:51:51:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T10:51:51:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T10:51:51:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T10:51:51:   params: [
+2025-11-01T10:51:51:     57,
+2025-11-01T10:51:51:     '2025-11-01T08:40:32.768Z',
+2025-11-01T10:51:51:     408.60628482681386,
+2025-11-01T10:51:51:     31.46841488918646,
+2025-11-01T10:51:51:     59.1278567361611,
+2025-11-01T10:51:51:     22.09809315133825,
+2025-11-01T10:51:51:     97.99587389352511,
+2025-11-01T10:51:51:     -12.858192097259273,
+2025-11-01T10:51:51:     15.511683465592277,
+2025-11-01T10:51:51:     1.2926402887993564,
+2025-11-01T10:51:51:     51.705611551974265,
+2025-11-01T10:51:51:     7.755841732796139,
+2025-11-01T10:51:51:     97,
+2025-11-01T10:51:51:     36.57030755555556,
+2025-11-01T10:51:51:     7.755841732796139,
+2025-11-01T10:51:51:     97,
+2025-11-01T10:51:51:     37.402261557568224,
+2025-11-01T10:51:51:     234.86950658059726,
+2025-11-01T10:51:51:     50.082273456030045,
+2025-11-01T10:51:51:     0,
+2025-11-01T10:51:51:     0,
+2025-11-01T10:51:51:     2.653491368333003,
+2025-11-01T10:51:51:     0.22112428069441692,
+2025-11-01T10:51:51:     '{"dataQuality":"good","weatherCondition":"partly_cloudy"}'
+2025-11-01T10:51:51:   ],
+2025-11-01T10:51:51:   cause: Error: read ECONNRESET
+2025-11-01T10:51:51:       at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+2025-11-01T10:51:51:     errno: -54,
+2025-11-01T10:51:51:     code: 'ECONNRESET',
+2025-11-01T10:51:51:     syscall: 'read'
+2025-11-01T10:51:51:   }
+2025-11-01T10:51:51: }
+2025-11-01T11:27:13:    ❌ Failed to generate for site 53: DrizzleQueryError: Failed query: update "sites" set "last_seen_at" = $1 where "sites"."id" = $2
+2025-11-01T11:27:13: params: 2025-11-01T09:21:41.650Z,53
+2025-11-01T11:27:13:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T11:27:13:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T11:27:13:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:383:5)
+2025-11-01T11:27:13:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T11:27:13:   query: 'update "sites" set "last_seen_at" = $1 where "sites"."id" = $2',
+2025-11-01T11:27:13:   params: [ '2025-11-01T09:21:41.650Z', 53 ],
+2025-11-01T11:27:13:   cause: Error: write CONNECTION_CLOSED ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech:5432
+2025-11-01T11:27:13:       at TLSSocket.closed (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:444:57)
+2025-11-01T11:27:13:       at TLSSocket.emit (node:events:520:35)
+2025-11-01T11:27:13:       at node:net:346:12
+2025-11-01T11:27:13:       at Socket.done (node:_tls_wrap:649:7)
+2025-11-01T11:27:13:       at Object.onceWrapper (node:events:623:26)
+2025-11-01T11:27:13:       at Socket.emit (node:events:520:35)
+2025-11-01T11:27:13:       at TCP.<anonymous> (node:net:346:12) {
+2025-11-01T11:27:13:     code: 'CONNECTION_CLOSED',
+2025-11-01T11:27:13:     errno: 'CONNECTION_CLOSED',
+2025-11-01T11:27:13:     address: [ 'ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech' ],
+2025-11-01T11:27:13:     port: [ 5432 ]
+2025-11-01T11:27:13:   }
+2025-11-01T11:27:13: }
+2025-11-01T12:02:41:    ❌ Failed to generate for site 11: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T12:02:41: params: 11,2025-11-01T10:02:31.975Z,410.1677514051922,39.30718450376242,66.8702357035096,22.265081772752318,97.99545673534467,-16.12253948197725,18.7824870943156,1.5652072578596332,62.60829031438533,9.3912435471578,97,36.97889236111111,9.3912435471578,97,37.53850641333674,227.92134285994453,50.093958625515334,0,0,2.6599476123383505,0.22166230102819587,{"dataQuality":"good","weatherCondition":"rainy"}
+2025-11-01T12:02:41:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T12:02:41:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T12:02:41:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T12:02:41:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T12:02:41:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T12:02:41:   params: [
+2025-11-01T12:02:41:     11,
+2025-11-01T12:02:41:     '2025-11-01T10:02:31.975Z',
+2025-11-01T12:02:41:     410.1677514051922,
+2025-11-01T12:02:41:     39.30718450376242,
+2025-11-01T12:02:41:     66.8702357035096,
+2025-11-01T12:02:41:     22.265081772752318,
+2025-11-01T12:02:41:     97.99545673534467,
+2025-11-01T12:02:41:     -16.12253948197725,
+2025-11-01T12:02:41:     18.7824870943156,
+2025-11-01T12:02:41:     1.5652072578596332,
+2025-11-01T12:02:41:     62.60829031438533,
+2025-11-01T12:02:41:     9.3912435471578,
+2025-11-01T12:02:41:     97,
+2025-11-01T12:02:41:     36.97889236111111,
+2025-11-01T12:02:41:     9.3912435471578,
+2025-11-01T12:02:41:     97,
+2025-11-01T12:02:41:     37.53850641333674,
+2025-11-01T12:02:41:     227.92134285994453,
+2025-11-01T12:02:41:     50.093958625515334,
+2025-11-01T12:02:41:     0,
+2025-11-01T12:02:41:     0,
+2025-11-01T12:02:41:     2.6599476123383505,
+2025-11-01T12:02:41:     0.22166230102819587,
+2025-11-01T12:02:41:     '{"dataQuality":"good","weatherCondition":"rainy"}'
+2025-11-01T12:02:41:   ],
+2025-11-01T12:02:41:   cause: Error: write CONNECT_TIMEOUT undefined:undefined
+2025-11-01T12:02:41:       at connectTimedOut (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:257:20)
+2025-11-01T12:02:41:       at Timeout.done [as _onTimeout] (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:1039:8)
+2025-11-01T12:02:41:       at listOnTimeout (node:internal/timers:610:11)
+2025-11-01T12:02:41:       at process.processTimers (node:internal/timers:543:7) {
+2025-11-01T12:02:41:     code: 'CONNECT_TIMEOUT',
+2025-11-01T12:02:41:     errno: 'CONNECT_TIMEOUT',
+2025-11-01T12:02:41:     address: undefined,
+2025-11-01T12:02:41:     port: undefined
+2025-11-01T12:02:41:   }
+2025-11-01T12:02:41: }
+2025-11-01T19:37:33:    ❌ Failed to generate for site 11: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-01T19:37:33: params: 11,2025-11-01T17:37:22.999Z,410.0267248754224,-2.480389008810168,66.15140700595045,20.87282708795255,97.9940416507953,1.0170257816994284,0,0,0,0,97,27.68847236111111,0,97,27.225248692118612,231.5217288163334,50.09921146206094,0,0,1.0170257816994284,0.08475214847495235,{"dataQuality":"good","weatherCondition":"cloudy"}
+2025-11-01T19:37:33:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-01T19:37:33:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T19:37:33:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-01T19:37:33:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-01T19:37:33:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-01T19:37:33:   params: [
+2025-11-01T19:37:33:     11,
+2025-11-01T19:37:33:     '2025-11-01T17:37:22.999Z',
+2025-11-01T19:37:33:     410.0267248754224,
+2025-11-01T19:37:33:     -2.480389008810168,
+2025-11-01T19:37:33:     66.15140700595045,
+2025-11-01T19:37:33:     20.87282708795255,
+2025-11-01T19:37:33:     97.9940416507953,
+2025-11-01T19:37:33:     1.0170257816994284,
+2025-11-01T19:37:33:     0,
+2025-11-01T19:37:33:     0,
+2025-11-01T19:37:33:     0,
+2025-11-01T19:37:33:     0,
+2025-11-01T19:37:33:     97,
+2025-11-01T19:37:33:     27.68847236111111,
+2025-11-01T19:37:33:     0,
+2025-11-01T19:37:33:     97,
+2025-11-01T19:37:33:     27.225248692118612,
+2025-11-01T19:37:33:     231.5217288163334,
+2025-11-01T19:37:33:     50.09921146206094,
+2025-11-01T19:37:33:     0,
+2025-11-01T19:37:33:     0,
+2025-11-01T19:37:33:     1.0170257816994284,
+2025-11-01T19:37:33:     0.08475214847495235,
+2025-11-01T19:37:33:     '{"dataQuality":"good","weatherCondition":"cloudy"}'
+2025-11-01T19:37:33:   ],
+2025-11-01T19:37:33:   cause: Error: write CONNECT_TIMEOUT ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech:5432
+2025-11-01T19:37:33:       at connectTimedOut (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:257:20)
+2025-11-01T19:37:33:       at Timeout.done [as _onTimeout] (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:1039:8)
+2025-11-01T19:37:33:       at listOnTimeout (node:internal/timers:610:11)
+2025-11-01T19:37:33:       at process.processTimers (node:internal/timers:543:7) {
+2025-11-01T19:37:33:     code: 'CONNECT_TIMEOUT',
+2025-11-01T19:37:33:     errno: 'CONNECT_TIMEOUT',
+2025-11-01T19:37:33:     address: 'ep-ancient-fire-abjazma7-pooler.eu-west-2.aws.neon.tech',
+2025-11-01T19:37:33:     port: 5432
+2025-11-01T19:37:33:   }
+2025-11-01T19:37:33: }
+2025-11-02T01:59:46: Failed to fetch weather data: Error: OpenMeteo API error: 400 Bad Request
+2025-11-02T01:59:46:     at fetchHistoricalWeather (/Users/haim/Projects/bms-dashboard/src/lib/weather.ts:80:13)
+2025-11-02T01:59:46:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T01:59:46:     at async TelemetryGenerator.getCurrentWeather (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:415:27)
+2025-11-02T01:59:46:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:260:23)
+2025-11-02T01:59:46:    ⚠️  Weather fetch failed, using cached data
+2025-11-02T03:02:32:    ❌ Failed to generate for site 11: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-02T03:02:32: params: 11,2025-11-02T00:53:45.002Z,409.6839694901402,-2.502910444332943,64.42053601273949,19.574590608592505,97.99275863793142,1.0254022861126506,0,0,0,0,97,22.520833222222223,0,97,23.134323266322873,234.82586611737807,50.00935510132137,0,0,1.0254022861126506,0.08545019050938754,{"dataQuality":"good","weatherCondition":"rainy"}
+2025-11-02T03:02:32:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-02T03:02:32:     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T03:02:32:     at runNextTicks (node:internal/process/task_queues:69:3)
+2025-11-02T03:02:32:     at process.processTimers (node:internal/timers:540:9)
+2025-11-02T03:02:32:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-02T03:02:32:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-02T03:02:32:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-02T03:02:32:   params: [
+2025-11-02T03:02:32:     11,
+2025-11-02T03:02:32:     '2025-11-02T00:53:45.002Z',
+2025-11-02T03:02:32:     409.6839694901402,
+2025-11-02T03:02:32:     -2.502910444332943,
+2025-11-02T03:02:32:     64.42053601273949,
+2025-11-02T03:02:32:     19.574590608592505,
+2025-11-02T03:02:32:     97.99275863793142,
+2025-11-02T03:02:32:     1.0254022861126506,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     97,
+2025-11-02T03:02:32:     22.520833222222223,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     97,
+2025-11-02T03:02:32:     23.134323266322873,
+2025-11-02T03:02:32:     234.82586611737807,
+2025-11-02T03:02:32:     50.00935510132137,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     1.0254022861126506,
+2025-11-02T03:02:32:     0.08545019050938754,
+2025-11-02T03:02:32:     '{"dataQuality":"good","weatherCondition":"rainy"}'
+2025-11-02T03:02:32:   ],
+2025-11-02T03:02:32:   cause: Error: write CONNECT_TIMEOUT undefined:undefined
+2025-11-02T03:02:32:       at connectTimedOut (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:257:20)
+2025-11-02T03:02:32:       at Timeout.done [as _onTimeout] (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/cjs/src/connection.js:1039:8)
+2025-11-02T03:02:32:       at listOnTimeout (node:internal/timers:610:11)
+2025-11-02T03:02:32:       at process.processTimers (node:internal/timers:543:7) {
+2025-11-02T03:02:32:     code: 'CONNECT_TIMEOUT',
+2025-11-02T03:02:32:     errno: 'CONNECT_TIMEOUT',
+2025-11-02T03:02:32:     address: undefined,
+2025-11-02T03:02:32:     port: undefined
+2025-11-02T03:02:32:   }
+2025-11-02T03:02:32: }
+2025-11-02T03:02:32:    ❌ Failed to generate for site 15: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-02T03:02:32: params: 15,2025-11-02T00:53:45.002Z,409.80434041664023,-2.4863609219914413,65.02577972049339,19.584215302900468,97.99274846845587,1.018921497674412,0,0,0,0,97,22.520833222222223,0,97,22.731177131915565,229.77399836694653,50.035622921302675,0,0,1.018921497674412,0.084910124806201,{"dataQuality":"good","weatherCondition":"rainy"}
+2025-11-02T03:02:32:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-02T03:02:32:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T03:02:32:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-02T03:02:32:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-02T03:02:32:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-02T03:02:32:   params: [
+2025-11-02T03:02:32:     15,
+2025-11-02T03:02:32:     '2025-11-02T00:53:45.002Z',
+2025-11-02T03:02:32:     409.80434041664023,
+2025-11-02T03:02:32:     -2.4863609219914413,
+2025-11-02T03:02:32:     65.02577972049339,
+2025-11-02T03:02:32:     19.584215302900468,
+2025-11-02T03:02:32:     97.99274846845587,
+2025-11-02T03:02:32:     1.018921497674412,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     97,
+2025-11-02T03:02:32:     22.520833222222223,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     97,
+2025-11-02T03:02:32:     22.731177131915565,
+2025-11-02T03:02:32:     229.77399836694653,
+2025-11-02T03:02:32:     50.035622921302675,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     1.018921497674412,
+2025-11-02T03:02:32:     0.084910124806201,
+2025-11-02T03:02:32:     '{"dataQuality":"good","weatherCondition":"rainy"}'
+2025-11-02T03:02:32:   ],
+2025-11-02T03:02:32:   cause: AggregateError [ENETDOWN]: 
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1134:18)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)
+2025-11-02T03:02:32:       at GetAddrInfoReqWrap.emitLookup [as callback] (node:net:1552:7)
+2025-11-02T03:02:32:       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:134:8) {
+2025-11-02T03:02:32:     code: 'ENETDOWN',
+2025-11-02T03:02:32:     [errors]: [ [Error], [Error], [Error], [Error], [Error], [Error] ]
+2025-11-02T03:02:32:   }
+2025-11-02T03:02:32: }
+2025-11-02T03:02:32:    ❌ Failed to generate for site 11: DrizzleQueryError: Failed query: insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)
+2025-11-02T03:02:32: params: 11,2025-11-02T01:02:32.008Z,409.66739953473217,-2.4628047431655737,64.33744129644221,19.476000585310775,97.99268932346747,1.0089308146944445,0,0,0,0,97,22.49155511111111,0,97,22.256750109908584,227.56394964816627,49.96400010747344,0,0,1.0089308146944445,0.0840775678912037,{"dataQuality":"good","weatherCondition":"rainy"}
+2025-11-02T03:02:32:     at PostgresJsPreparedQuery.queryWithCache (/Users/haim/Projects/bms-dashboard/node_modules/.pnpm/drizzle-orm@0.44.7_@opentelemetry+api@1.9.0_postgres@3.4.7/node_modules/src/pg-core/session.ts:73:11)
+2025-11-02T03:02:32:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T03:02:32:     at async TelemetryGenerator.generateForSite (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:380:5)
+2025-11-02T03:02:32:     at async TelemetryGenerator.generateRound (/Users/haim/Projects/bms-dashboard/src/services/telemetry-generator.ts:266:11) {
+2025-11-02T03:02:32:   query: 'insert into "telemetry_readings" ("id", "site_id", "timestamp", "battery_voltage", "battery_current", "battery_charge_level", "battery_temperature", "battery_soh", "battery_power_kw", "solar_power_kw", "solar_energy_kwh", "solar_efficiency", "inverter1_power_kw", "inverter1_efficiency", "inverter1_temperature", "inverter2_power_kw", "inverter2_efficiency", "inverter2_temperature", "grid_voltage", "grid_frequency", "grid_power_kw", "grid_energy_kwh", "load_power_kw", "load_energy_kwh", "metadata", "created_at") values (default, $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, default)',
+2025-11-02T03:02:32:   params: [
+2025-11-02T03:02:32:     11,
+2025-11-02T03:02:32:     '2025-11-02T01:02:32.008Z',
+2025-11-02T03:02:32:     409.66739953473217,
+2025-11-02T03:02:32:     -2.4628047431655737,
+2025-11-02T03:02:32:     64.33744129644221,
+2025-11-02T03:02:32:     19.476000585310775,
+2025-11-02T03:02:32:     97.99268932346747,
+2025-11-02T03:02:32:     1.0089308146944445,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     97,
+2025-11-02T03:02:32:     22.49155511111111,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     97,
+2025-11-02T03:02:32:     22.256750109908584,
+2025-11-02T03:02:32:     227.56394964816627,
+2025-11-02T03:02:32:     49.96400010747344,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     0,
+2025-11-02T03:02:32:     1.0089308146944445,
+2025-11-02T03:02:32:     0.0840775678912037,
+2025-11-02T03:02:32:     '{"dataQuality":"good","weatherCondition":"rainy"}'
+2025-11-02T03:02:32:   ],
+2025-11-02T03:02:32:   cause: AggregateError [ENETDOWN]: 
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1134:18)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at internalConnectMultiple (node:net:1210:5)
+2025-11-02T03:02:32:       at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)
+2025-11-02T03:02:32:       at GetAddrInfoReqWrap.emitLookup [as callback] (node:net:1552:7)
+2025-11-02T03:02:32:       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:134:8) {
+2025-11-02T03:02:32:     code: 'ENETDOWN',
+2025-11-02T03:02:32:     [errors]: [ [Error], [Error], [Error], [Error], [Error], [Error] ]
+2025-11-02T03:02:32:   }
+2025-11-02T03:02:32: }

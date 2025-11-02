@@ -218,3 +218,25 @@ export async function resolveBulkAlerts(alertIds: number[], userId: string = 'sy
     return { success: false, error: 'Failed to resolve alerts' }
   }
 }
+
+export async function getActiveAlertCount() {
+  try {
+    const [result] = await db
+      .select({ count: count() })
+      .from(alerts)
+      .where(
+        and(
+          eq(alerts.status, 'active'),
+          sql`${alerts.severity} IN ('critical', 'error', 'warning')`
+        )
+      )
+
+    return {
+      success: true,
+      count: Number(result?.count || 0)
+    }
+  } catch (error) {
+    console.error('Error fetching alert count:', error)
+    return { success: false, count: 0 }
+  }
+}

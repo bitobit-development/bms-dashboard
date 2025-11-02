@@ -55,7 +55,6 @@ export const mainNavigation: NavSection[] = [
         title: 'Alerts',
         href: '/dashboard/alerts',
         icon: AlertCircle,
-        badge: 3,
       },
       {
         title: 'Reports',

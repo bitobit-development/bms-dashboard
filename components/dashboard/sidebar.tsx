@@ -10,7 +10,7 @@ import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
-import { mainNavigation, footerNavigation, type NavItem } from '@/lib/navigation'
+import { mainNavigation, footerNavigation, type NavItem, type NavSection } from '@/lib/navigation'
 import { LiveClock } from './live-clock'
 import { useUser, useStackApp } from '@stackframe/stack'
 import { Logo } from '@/components/ui/logo'
@@ -31,6 +31,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { toast } from 'sonner'
+import { getActiveAlertCount } from '@/app/actions/alerts-actions'
 
 function NavLink({ item, isActive }: { item: NavItem; isActive: boolean }) {
   const Icon = item.icon
@@ -64,6 +65,7 @@ export function Sidebar() {
   const [isSigningOut, setIsSigningOut] = useState(false)
   const [showConfirmDialog, setShowConfirmDialog] = useState(false)
   const [signOutType, setSignOutType] = useState<'current' | 'all'>('current')
+  const [alertCount, setAlertCount] = useState<number>(0)
 
   if (!user) {
     return null
@@ -86,6 +88,23 @@ export function Sidebar() {
     .join('')
     .toUpperCase()
     .substring(0, 2)
+
+  // Fetch alert count on mount and poll every 30 seconds
+  useEffect(() => {
+    const fetchAlertCount = async () => {
+      const result = await getActiveAlertCount()
+      if (result.success) {
+        setAlertCount(result.count)
+      }
+    }
+
+    // Initial fetch
+    fetchAlertCount()
+
+    // Poll every 30 seconds
+    const interval = setInterval(fetchAlertCount, 30000)
+    return () => clearInterval(interval)
+  }, [])
 
   // Keyboard shortcut: Cmd/Ctrl + Shift + Q
   useEffect(() => {
@@ -128,6 +147,16 @@ export function Sidebar() {
     setShowConfirmDialog(true)
   }
 
+  // Inject alert count into navigation items
+  const navItemsWithBadge: NavSection[] = mainNavigation.map(section => ({
+    ...section,
+    items: section.items.map(item =>
+      item.href === '/dashboard/alerts'
+        ? { ...item, badge: alertCount > 0 ? alertCount : undefined }
+        : item
+    )
+  }))
+
   return (
     <div className="flex h-screen w-64 lg:w-72 xl:w-80 flex-col border-r bg-background">
       {/* Brand Section */}
@@ -143,7 +172,7 @@ export function Sidebar() {
       {/* Navigation Sections */}
       <ScrollArea className="flex-1 px-3 py-4">
         <div className="space-y-6">
-          {mainNavigation.map((section, idx) => (
+          {navItemsWithBadge.map((section, idx) => (
             <div key={idx} className="space-y-1">
               {section.title && (
                 <h3 className="mb-2 px-3 text-xs font-semibold uppercase text-muted-foreground">
