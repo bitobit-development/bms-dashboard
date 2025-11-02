@@ -44,3 +44,8 @@ next-env.d.ts
 .claude/
 .cache/
 .playwright-mcp/
+
+# Investigation/debugging scripts
+src/scripts/check-*.ts
+src/scripts/find-*.ts
+src/scripts/site-dates.ts
