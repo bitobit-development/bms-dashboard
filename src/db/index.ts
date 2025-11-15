@@ -16,7 +16,7 @@ if (!process.env.DATABASE_URL) {
 const client = postgres(process.env.DATABASE_URL, {
   max: 10, // Maximum connections in pool
   idle_timeout: 20, // Close idle connections after 20 seconds
-  connect_timeout: 10, // Connection timeout
+  connect_timeout: 30, // Connection timeout (increased for telemetry generator)
 })
 
 // Create Drizzle instance
