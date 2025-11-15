@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
       const weatherStartDate = subHours(timestamp, 24)
       const weatherEndDate = addHours(timestamp, 1)
       const weatherData = await fetchHistoricalWeather(weatherStartDate, weatherEndDate)
-      currentWeather = getWeatherAtTimestamp(timestamp, weatherData)
+      currentWeather = await getWeatherAtTimestamp(timestamp, weatherData)
       console.log(`   Weather: ${currentWeather.temperature}°C, ${currentWeather.weatherCondition}`)
     } catch (error) {
       console.log(`   ⚠️  Weather fetch failed, using default nighttime weather`)
