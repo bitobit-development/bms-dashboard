@@ -22,7 +22,7 @@ import { subHours, addHours } from 'date-fns'
 
 // This route runs on every request (no caching)
 export const dynamic = 'force-dynamic'
-export const maxDuration = 60 // Maximum execution time in seconds (Vercel Pro)
+export const maxDuration = 10 // Maximum execution time in seconds (Vercel Hobby plan limit)
 
 /**
  * GET /api/cron/telemetry
@@ -105,19 +105,20 @@ export async function GET(request: NextRequest) {
       }
     }
 
-    // Generate telemetry for each site
-    let successCount = 0
-    let errorCount = 0
+    // Generate telemetry for each site (in parallel for speed)
+    const results = await Promise.allSettled(
+      allSites.map(site => generateTelemetryForSite(site, timestamp, currentWeather))
+    )
 
-    for (const site of allSites) {
-      try {
-        await generateTelemetryForSite(site, timestamp, currentWeather)
-        successCount++
-      } catch (error) {
-        console.error(`   ❌ Failed for site ${site.id}:`, error)
-        errorCount++
+    const successCount = results.filter(r => r.status === 'fulfilled').length
+    const errorCount = results.filter(r => r.status === 'rejected').length
+
+    // Log any errors
+    results.forEach((result, index) => {
+      if (result.status === 'rejected') {
+        console.error(`   ❌ Failed for site ${allSites[index].id}:`, result.reason)
       }
-    }
+    })
 
     const duration = Date.now() - startTime
 
