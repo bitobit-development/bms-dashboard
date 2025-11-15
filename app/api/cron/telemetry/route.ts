@@ -56,9 +56,10 @@ export async function GET(request: NextRequest) {
   try {
     console.log(`[${timestamp.toISOString()}] 🔄 Cron: Generating telemetry...`)
 
-    // Load all active sites
+    // Load all active sites, ordered by lastSeenAt (process oldest first)
     const allSites = await db.query.sites.findMany({
       where: eq(sites.status, 'active'),
+      orderBy: [desc(sites.lastSeenAt)], // Oldest sites first (NULL last)
     })
 
     if (allSites.length === 0) {
@@ -71,7 +72,11 @@ export async function GET(request: NextRequest) {
       })
     }
 
-    console.log(`   Found ${allSites.length} active sites`)
+    // Process in batches to stay within Vercel Hobby 10s timeout
+    const BATCH_SIZE = 30 // Process 30 sites per run (completes in ~8s)
+    const sitesToProcess = allSites.slice(0, BATCH_SIZE)
+
+    console.log(`   Found ${allSites.length} active sites, processing batch of ${sitesToProcess.length}`)
 
     // Fetch weather data once for all sites (last 24 hours)
     let currentWeather: Awaited<ReturnType<typeof getWeatherAtTimestamp>>
@@ -105,9 +110,9 @@ export async function GET(request: NextRequest) {
       }
     }
 
-    // Generate telemetry for each site (in parallel for speed)
+    // Generate telemetry for sites in this batch (in parallel for speed)
     const results = await Promise.allSettled(
-      allSites.map(site => generateTelemetryForSite(site, timestamp, currentWeather))
+      sitesToProcess.map(site => generateTelemetryForSite(site, timestamp, currentWeather))
     )
 
     const successCount = results.filter(r => r.status === 'fulfilled').length
@@ -116,7 +121,7 @@ export async function GET(request: NextRequest) {
     // Log any errors
     results.forEach((result, index) => {
       if (result.status === 'rejected') {
-        console.error(`   ❌ Failed for site ${allSites[index].id}:`, result.reason)
+        console.error(`   ❌ Failed for site ${sitesToProcess[index].id}:`, result.reason)
       }
     })
 
