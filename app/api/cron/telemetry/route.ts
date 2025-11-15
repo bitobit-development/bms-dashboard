@@ -74,7 +74,7 @@ export async function GET(request: NextRequest) {
     console.log(`   Found ${allSites.length} active sites`)
 
     // Fetch weather data once for all sites (last 24 hours)
-    let currentWeather
+    let currentWeather: Awaited<ReturnType<typeof getWeatherAtTimestamp>>
     try {
       const weatherStartDate = subHours(timestamp, 24)
       const weatherEndDate = addHours(timestamp, 1)
