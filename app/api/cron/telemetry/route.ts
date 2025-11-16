@@ -22,7 +22,7 @@ import { subHours, addHours } from 'date-fns'
 
 // This route runs on every request (no caching)
 export const dynamic = 'force-dynamic'
-export const maxDuration = 10 // Maximum execution time in seconds (Vercel Hobby plan limit)
+export const maxDuration = 60 // Maximum execution time in seconds (Vercel Pro)
 
 /**
  * GET /api/cron/telemetry
@@ -56,10 +56,9 @@ export async function GET(request: NextRequest) {
   try {
     console.log(`[${timestamp.toISOString()}] 🔄 Cron: Generating telemetry...`)
 
-    // Load all active sites, ordered by lastSeenAt (process oldest first)
+    // Load all active sites
     const allSites = await db.query.sites.findMany({
       where: eq(sites.status, 'active'),
-      orderBy: [desc(sites.lastSeenAt)], // Oldest sites first (NULL last)
     })
 
     if (allSites.length === 0) {
@@ -72,11 +71,7 @@ export async function GET(request: NextRequest) {
       })
     }
 
-    // Process in batches to stay within Vercel Hobby 10s timeout
-    const BATCH_SIZE = 30 // Process 30 sites per run (completes in ~8s)
-    const sitesToProcess = allSites.slice(0, BATCH_SIZE)
-
-    console.log(`   Found ${allSites.length} active sites, processing batch of ${sitesToProcess.length}`)
+    console.log(`   Found ${allSites.length} active sites`)
 
     // Fetch weather data once for all sites (last 24 hours)
     let currentWeather: Awaited<ReturnType<typeof getWeatherAtTimestamp>>
@@ -110,9 +105,9 @@ export async function GET(request: NextRequest) {
       }
     }
 
-    // Generate telemetry for sites in this batch (in parallel for speed)
+    // Generate telemetry for all sites (in parallel for speed)
     const results = await Promise.allSettled(
-      sitesToProcess.map(site => generateTelemetryForSite(site, timestamp, currentWeather))
+      allSites.map(site => generateTelemetryForSite(site, timestamp, currentWeather))
     )
 
     const successCount = results.filter(r => r.status === 'fulfilled').length
@@ -121,7 +116,7 @@ export async function GET(request: NextRequest) {
     // Log any errors
     results.forEach((result, index) => {
       if (result.status === 'rejected') {
-        console.error(`   ❌ Failed for site ${sitesToProcess[index].id}:`, result.reason)
+        console.error(`   ❌ Failed for site ${allSites[index].id}:`, result.reason)
       }
     })
 
