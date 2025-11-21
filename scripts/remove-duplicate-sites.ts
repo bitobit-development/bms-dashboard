@@ -40,12 +40,12 @@ async function removeDuplicateSites() {
   console.log(`Remaining sites: ${remaining[0].count}`);
 
   // Get all remaining sites for the list
-  const allSites = await db.select({ id: sites.id, name: sites.name, location: sites.location })
+  const allSites = await db.select({ id: sites.id, name: sites.name, city: sites.city })
     .from(sites)
     .orderBy(sites.name);
 
   console.log('\n--- REMAINING SITES ---');
-  allSites.forEach((s, i) => console.log(`${i + 1}. ${s.name} - ${s.location || 'N/A'}`));
+  allSites.forEach((s, i) => console.log(`${i + 1}. ${s.name} - ${s.city || 'N/A'}`));
 
   process.exit(0);
 }

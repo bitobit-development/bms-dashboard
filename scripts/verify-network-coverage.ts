@@ -164,7 +164,7 @@ async function main() {
       console.log(`   Cutoff: ${result.cutoffDate}`)
       console.log(`   Valid records (before cutoff): ${result.validRecordsBeforeCutoff}`)
       console.log(`   Invalid records (after cutoff): ${result.invalidRecordsAfterCutoff}`)
-      console.log(`   Issue: ${result.invalidRecordsAfterCutoff > 0 ? 'Data exists after cutoff!' : 'No data before cutoff!'}`)
+      console.log(`   Issue: ${(result.invalidRecordsAfterCutoff ?? 0) > 0 ? 'Data exists after cutoff!' : 'No data before cutoff!'}`)
       invalidCount++
     }
   }
