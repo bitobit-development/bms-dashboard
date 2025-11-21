@@ -17,8 +17,9 @@ import {
 import { eq, and, desc, lt, inArray } from 'drizzle-orm'
 import { stackServerApp } from '@/app/stack'
 import { put, del } from '@vercel/blob'
-import { randomUUID } from 'crypto'
+import { randomUUID, randomBytes } from 'crypto'
 import { revalidatePath } from 'next/cache'
+import { format } from 'date-fns'
 
 // ============================================================================
 // Types
@@ -363,6 +364,48 @@ export async function getPdfExportHistory(): Promise<
 }
 
 /**
+ * Delete a PDF export record
+ *
+ * Removes the PDF from Vercel Blob storage and deletes the database record.
+ */
+export async function deletePdfExport(jobId: string): Promise<ActionResult> {
+  try {
+    const { user, error: authError } = await getAuthenticatedUser()
+    if (authError || !user) {
+      return { success: false, error: authError || 'Authentication failed' }
+    }
+
+    const { job, error } = await verifyJobOwnership(jobId, user.id)
+    if (error || !job) {
+      return { success: false, error: error || 'Job not found' }
+    }
+
+    // Delete from Vercel Blob if there's a download URL
+    if (job.downloadUrl) {
+      try {
+        await del(job.downloadUrl)
+      } catch (blobError) {
+        console.error('Failed to delete blob:', blobError)
+        // Continue with DB deletion even if blob deletion fails
+      }
+    }
+
+    // Delete from database
+    await db.delete(pdfExportJobs).where(eq(pdfExportJobs.id, jobId))
+
+    revalidatePath('/dashboard/data-usage')
+
+    return { success: true }
+  } catch (error) {
+    console.error('Error deleting PDF export:', error)
+    return {
+      success: false,
+      error: 'Failed to delete export',
+    }
+  }
+}
+
+/**
  * Clean up expired PDF exports
  *
  * Cron job that deletes expired exports from Vercel Blob and database.
@@ -469,8 +512,14 @@ async function processJob(jobId: string): Promise<void> {
       }
     )
 
+    // Generate filename: {startDate}-{endDate}_{siteCount}sites_{randomId}.pdf
+    const startStr = format(job.dateRangeStart, 'yyyy-MM-dd')
+    const endStr = format(job.dateRangeEnd, 'yyyy-MM-dd')
+    const randomSuffix = randomBytes(4).toString('hex')
+    const filename = `${startStr}_${endStr}_${userSites.length}sites_${randomSuffix}.pdf`
+
     // Upload to Vercel Blob
-    const blob = await put(`exports/${jobId}.pdf`, pdfBuffer, {
+    const blob = await put(`exports/${filename}`, pdfBuffer, {
       access: 'public',
       addRandomSuffix: false,
     })

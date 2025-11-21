@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Download, Clock, CheckCircle, XCircle, Loader2 } from 'lucide-react'
+import { Download, Clock, CheckCircle, XCircle, Loader2, Trash2, ExternalLink } from 'lucide-react'
 import { format } from 'date-fns'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -16,6 +16,7 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import {
   getPdfExportHistory,
+  deletePdfExport,
   type PdfExportHistoryItem,
 } from '@/app/actions/pdf-exports'
 import { toast } from 'sonner'
@@ -56,14 +57,35 @@ export function ExportHistory() {
     return () => clearInterval(interval)
   }, [])
 
-  const handleDownload = (url: string, dateRangeStart: Date) => {
+  const handleView = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+
+  const handleDownload = (url: string, dateRangeStart: Date, dateRangeEnd: Date, totalSites: number) => {
     const a = document.createElement('a')
     a.href = url
-    a.download = `network-report-${format(dateRangeStart, 'yyyy-MM-dd')}.pdf`
+    a.download = `${format(dateRangeStart, 'yyyy-MM-dd')}_${format(dateRangeEnd, 'yyyy-MM-dd')}_${totalSites}sites.pdf`
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
     toast.success('PDF downloaded successfully')
+  }
+
+  const handleDelete = async (jobId: string) => {
+    if (!confirm('Are you sure you want to delete this export?')) return
+
+    try {
+      const result = await deletePdfExport(jobId)
+      if (result.success) {
+        toast.success('Export deleted successfully')
+        fetchHistory()
+      } else {
+        toast.error(result.error || 'Failed to delete export')
+      }
+    } catch (error) {
+      console.error('Error deleting export:', error)
+      toast.error('Failed to delete export')
+    }
   }
 
   const formatFileSize = (bytes: number | undefined) => {
@@ -168,20 +190,45 @@ export function ExportHistory() {
                     <TableCell>{getStatusBadge(item.status)}</TableCell>
                     <TableCell>{formatFileSize(item.fileSize)}</TableCell>
                     <TableCell>
-                      {item.status === 'complete' && item.downloadUrl ? (
+                      <div className="flex items-center gap-1">
+                        {item.status === 'complete' && item.downloadUrl ? (
+                          <>
+                            <Button
+                              type="button"
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => handleView(item.downloadUrl!)}
+                              className="h-8"
+                              title="Open in new tab"
+                            >
+                              <ExternalLink className="h-4 w-4 mr-1" aria-hidden="true" />
+                              View
+                            </Button>
+                            <Button
+                              type="button"
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => handleDownload(item.downloadUrl!, item.dateRangeStart, item.dateRangeEnd, item.totalSites)}
+                              className="h-8"
+                              title="Download PDF"
+                            >
+                              <Download className="h-4 w-4" aria-hidden="true" />
+                            </Button>
+                          </>
+                        ) : (
+                          <span className="text-sm text-muted-foreground">-</span>
+                        )}
                         <Button
                           type="button"
                           variant="ghost"
                           size="sm"
-                          onClick={() => handleDownload(item.downloadUrl!, item.dateRangeStart)}
-                          className="h-8"
+                          onClick={() => handleDelete(item.id)}
+                          className="h-8 text-destructive hover:text-destructive"
+                          title="Delete export"
                         >
-                          <Download className="h-4 w-4 mr-1" aria-hidden="true" />
-                          Download
+                          <Trash2 className="h-4 w-4" aria-hidden="true" />
                         </Button>
-                      ) : (
-                        <span className="text-sm text-muted-foreground">-</span>
-                      )}
+                      </div>
                     </TableCell>
                   </TableRow>
                 ))}
