@@ -12,6 +12,7 @@ import {
   Book,
   HelpCircle,
   Users,
+  Network,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -60,6 +61,11 @@ export const mainNavigation: NavSection[] = [
         title: 'Reports',
         href: '/dashboard/reports',
         icon: FileText,
+      },
+      {
+        title: 'Data Usage',
+        href: '/dashboard/data-usage',
+        icon: Network,
       },
     ],
   },

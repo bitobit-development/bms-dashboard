@@ -21,6 +21,7 @@ BMS (Battery Management System) Dashboard - A production Next.js 16.0.1 applicat
 - `pnpm db:studio` - Open Drizzle Studio for database GUI
 - `pnpm db:seed` - Seed database with initial data
 - `pnpm db:seed:weather` - Seed weather data
+- `pnpm db:seed:network` - Seed network telemetry data (realistic randomized)
 - `pnpm db:stats` - Check database statistics
 
 ### Telemetry & Testing
@@ -52,6 +53,12 @@ BMS (Battery Management System) Dashboard - A production Next.js 16.0.1 applicat
 - `NEXT_PUBLIC_STACK_PROJECT_ID` - Public project ID
 - `NEXT_PUBLIC_STACK_PUBLISHABLE_CLIENT_KEY` - Public client key
 - `STACK_SECRET_SERVER_KEY` - Secret key (server-only, never expose)
+
+**Vercel Cron (Production Telemetry):**
+- `CRON_SECRET` - Authentication secret for cron job endpoint (required for production)
+
+**Vercel Blob (PDF Storage):**
+- `BLOB_READ_WRITE_TOKEN` - Token for Vercel Blob storage (required for PDF exports)
 
 **Email Notifications (Optional):**
 - `EMAIL_FROM` - Sender email address
@@ -124,12 +131,18 @@ middleware.ts            # Auth middleware + user sync
 - `telemetry_hourly` / `telemetry_daily` - Aggregated time-series
 - `alerts` - System alerts and notifications
 - `weather` - Weather data for sites
+- `network_telemetry` - Network bandwidth and latency metrics (hourly)
+- `network_daily_aggregates` / `network_monthly_aggregates` - Network usage rollups
+- `pdf_export_jobs` - Background PDF generation tracking with progress
 
 **Key Relationships:**
 - Organizations have many users and sites
-- Sites have equipment and telemetry
+- Sites have equipment, telemetry, and network metrics
 - Users have roles: `owner`, `admin`, `operator`, `viewer`
 - User status flow: `pending` → `active` (or `inactive`/`suspended`)
+- PDF export jobs track background processing with progress updates
+
+**Total Tables**: 15 (12 core + 3 network/PDF)
 
 ### Authentication & Authorization
 
@@ -182,10 +195,11 @@ export async function someAdminAction() {
 - Call Server Actions directly, no API routes needed
 
 **Telemetry System:**
-- PM2 process generates continuous telemetry data
-- Inserts to `telemetry_readings` table
-- Background jobs aggregate to hourly/daily tables
+- **Production**: Vercel Cron (`/api/cron/telemetry`) runs every 5 minutes, processes all 120 sites in ~10s
+- **Development**: PM2 process generates continuous telemetry data locally
+- Data flow: Insert to `telemetry_readings` → aggregate to hourly/daily tables
 - Real-time dashboard updates via polling
+- Sites show as "online" when `lastSeenAt` is within 10 minutes
 
 ## Tech Stack Details
 
@@ -198,12 +212,14 @@ export async function someAdminAction() {
 - **Lucide React** - Icon library
 - **Recharts** - Charts and visualizations
 - **date-fns** - Date formatting and manipulation
+- **@react-pdf/renderer 4.3.1** - Programmatic PDF generation (not Puppeteer)
 
 ### Backend
 - **Drizzle ORM 0.44.7** - Type-safe SQL query builder
 - **Neon PostgreSQL** - Serverless Postgres with pooling
 - **Stack Auth 2.8.47** - Authentication via Neon integration
 - **Server Actions** - No API routes, actions in `app/actions/`
+- **Vercel Blob 2.0.0** - Serverless file storage for PDFs (48-hour expiry)
 
 ### Dev Tools
 - **ESLint 9** - Linting with Next.js config
@@ -306,6 +322,8 @@ pnpm db:seed                  # Reset with seed data
 ```
 
 ### Telemetry Development
+
+**Local Development (PM2):**
 ```bash
 pnpm telemetry:5min           # Generate 5min of data
 pnpm telemetry:check          # Verify data
@@ -314,6 +332,13 @@ pnpm telemetry:pm2:logs       # View generation logs
 pnpm telemetry:pm2:status     # Check PM2 status
 pnpm telemetry:pm2:stop       # Stop generation
 ```
+
+**Production (Vercel Cron):**
+- Configured in `vercel.json` to run every 5 minutes (`*/5 * * * *`)
+- Endpoint: `/api/cron/telemetry` (authenticated with `CRON_SECRET`)
+- Processes all active sites in parallel (~10 seconds on Pro plan)
+- Manual trigger: `curl -H 'Authorization: Bearer $CRON_SECRET' https://your-app.vercel.app/api/cron/telemetry`
+- View logs: Vercel Dashboard → Functions → `/api/cron/telemetry`
 
 **PM2 Setup Note**: PM2 configuration (`ecosystem.config.js`) uses `dotenv-cli` to load `.env.local`. Ensure PM2 is installed globally: `npm install -g pm2`
 
@@ -359,8 +384,10 @@ pnpm telemetry:pm2:stop       # Stop generation
 **Vercel**:
 - Project: `bms-dashboard`
 - Organization: `bit2bits-projects`
-- Environment variables synced from Neon
-- Latest: https://bms-dashboard-3d09a3wrc-bit2bits-projects.vercel.app
+- Plan: Pro (required for 60-second function timeout)
+- Environment variables synced from Neon + `CRON_SECRET`
+- Cron Jobs: `/api/cron/telemetry` runs every 5 minutes
+- Latest: https://bms-dashboard-bit2bits-projects.vercel.app
 
 ## Authentication Page Design Pattern
 
@@ -397,6 +424,88 @@ All authentication-related pages follow a consistent design:
 - `app/dashboard/loading.tsx` - Dashboard loading
 
 All loading states use `LoginLoading` component for consistency.
+
+## Data Usage Reports & PDF Export
+
+### Network Usage Tracking
+
+**Feature**: Track bandwidth utilization, data consumption, and network latency across all sites with date range filtering.
+
+**Key Components:**
+- **Page**: `/app/dashboard/data-usage/page.tsx` - Overview with summary stats, search, site cards
+- **Detail Page**: `/app/dashboard/data-usage/[siteId]/page.tsx` - Individual site metrics with charts
+- **Server Actions**: `/app/actions/network-usage.ts` - 6 actions for data fetching, aggregation, export
+
+**Data Tables:**
+- `network_telemetry` - Raw hourly metrics (upload/download speed, latency, data consumed)
+- `network_daily_aggregates` - Daily rollups with min/max/avg calculations
+- `network_monthly_aggregates` - Monthly summaries
+
+**Seed Data:**
+- Run `pnpm db:seed:network` to generate realistic randomized data
+- Per-site characteristics: base utilization (40-95%), latency (10-50ms), reliability (70-100%)
+- Temporal patterns: time-of-day variations, seasonal trends, weekend effects
+- Random anomalies: outages, latency spikes, bandwidth congestion
+
+**Export Formats:**
+- CSV: Tabular data export with all metrics
+- JSON: Structured data for API consumption
+- PDF: Professional reports with executive summary (see below)
+
+### PDF Export System
+
+**Architecture**: Background job processing with real-time progress tracking and Vercel Blob storage.
+
+**Key Files:**
+- **Server Actions**: `/app/actions/pdf-exports.ts` - 6 actions (start, check progress, cancel, history, cleanup, process)
+- **PDF Engine**: `/lib/pdf/` - React PDF document generation
+  - `NetworkUsageDocument.tsx` - Main PDF template
+  - `components/CoverPage.tsx` - Professional branding
+  - `components/ExecutiveSummary.tsx` - KPIs, health distribution, insights
+  - `components/SiteDetailPage.tsx` - Individual site metrics tables
+  - `styles.ts` - Consistent PDF styling
+  - `utils/dataTransform.ts` - Data formatting helpers
+
+**UI Components** (`/components/dashboard/data-usage/`):
+- `pdf-export-modal.tsx` - Configuration dialog (date range, site selection)
+- `pdf-progress-modal.tsx` - Real-time progress tracking with 2s polling
+- `export-history.tsx` - Last 10 exports with status, download links
+
+**Job Processing Flow:**
+1. User configures export (date range, sites) and clicks "PDF"
+2. `startPdfExport()` creates job in `pdf_export_jobs` table with `status='pending'`
+3. Background `processJob()` runs:
+   - Fetches network data in batches (20 sites per query)
+   - Updates progress (0-100%) after each batch
+   - Generates PDF using `@react-pdf/renderer`
+   - Uploads to Vercel Blob with 48-hour expiry
+   - Updates job with `download_url` and `status='completed'`
+4. Frontend polls `checkPdfProgress()` every 2 seconds
+5. On completion, auto-downloads PDF and shows download button
+
+**Database Table** (`pdf_export_jobs`):
+- Tracks: status (pending/processing/completed/failed/cancelled)
+- Progress: 0-100% with processed_sites / total_sites
+- Metadata: date range, site IDs, file size, download URL
+- Expiry: Vercel Blob URLs expire after 48 hours
+
+**Performance:**
+- Batch processing: 10 sites per batch for PDF generation
+- Parallel data fetching: 20 sites per query
+- Estimated time: 15-20 seconds for 120 sites
+- Vercel Pro plan: 60-second timeout for large exports
+
+**Manual Setup Required:**
+```bash
+# 1. Create database table
+pnpm db:push  # Select "Yes" for pdf_export_jobs table
+
+# 2. Set Vercel Blob token in .env.local
+BLOB_READ_WRITE_TOKEN=vercel_blob_rw_...
+
+# 3. Seed network data (optional, for testing)
+pnpm db:seed:network
+```
 
 ## Bug Fix Documentation
 

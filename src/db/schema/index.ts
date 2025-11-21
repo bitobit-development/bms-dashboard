@@ -23,6 +23,12 @@ export * from './user-audit-log'
 // Weather
 export * from './weather'
 
+// Network Telemetry (Data Usage Reports)
+export * from './network-telemetry'
+
+// PDF Export Jobs
+export * from './pdf-exports'
+
 /**
  * Schema Summary:
  *
@@ -50,6 +56,9 @@ export * from './weather'
  * 6. WEATHER
  *    - weather: Current weather data for sites
  *
- * Total Tables: 11
+ * 7. PDF EXPORTS
+ *    - pdf_export_jobs: Asynchronous PDF generation tracking
+ *
+ * Total Tables: 12
  * Partitioned Tables: 1 (telemetry_readings)
  */
