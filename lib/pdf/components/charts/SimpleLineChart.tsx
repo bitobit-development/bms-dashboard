@@ -40,8 +40,12 @@ export const SimpleLineChart: React.FC<SimpleLineChartProps> = ({
   showGrid = true,
   showLegend = true,
 }) => {
+  // Ensure chart fits within A4 content area (~515pt width accounting for 40pt padding)
+  const maxWidth = 470 // Safe width for A4 page with margins
+  const safeWidth = Math.min(width, maxWidth)
+
   const padding = { top: 10, right: 10, bottom: 20, left: 30 }
-  const chartWidth = width - padding.left - padding.right
+  const chartWidth = safeWidth - padding.left - padding.right
   const chartHeight = height - padding.top - padding.bottom
 
   // Find min/max across all series
@@ -80,7 +84,7 @@ export const SimpleLineChart: React.FC<SimpleLineChartProps> = ({
           {title}
         </Text>
       )}
-      <Svg width={width} height={height}>
+      <Svg width={safeWidth} height={height}>
         {/* Grid lines */}
         {showGrid && (
           <>
@@ -90,7 +94,7 @@ export const SimpleLineChart: React.FC<SimpleLineChartProps> = ({
                 key={`h-${i}`}
                 x1={padding.left}
                 y1={padding.top + ratio * chartHeight}
-                x2={width - padding.right}
+                x2={safeWidth - padding.right}
                 y2={padding.top + ratio * chartHeight}
                 stroke={colors.bg.border}
                 strokeWidth={0.5}

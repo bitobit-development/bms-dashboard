@@ -19,9 +19,9 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
   const { site, summary, speedData, latencyData, consumptionData } = siteData
 
   return (
-    <Page size="A4" style={styles.page}>
+    <Page size="A4" style={styles.page} wrap>
       {/* Site Header */}
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
+      <View wrap={false} style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
         <View style={{ flex: 1 }}>
           <Text style={styles.header}>{site.name}</Text>
           <Text style={styles.bodySecondary}>
@@ -37,59 +37,64 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
       <View style={styles.divider} />
 
       {/* Summary Metrics Grid */}
-      <Text style={styles.sectionTitle}>Performance Summary</Text>
+      <View wrap={false}>
+        <Text style={styles.sectionTitle}>Performance Summary</Text>
 
-      <View style={{ flexDirection: 'row', marginBottom: 12, gap: 8 }}>
-        <View style={styles.metricCard}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
-            {summary.avgUploadSpeed}
-          </Text>
-          <Text style={styles.metricLabel}>Avg Upload</Text>
+        <View style={{ flexDirection: 'row', marginBottom: 12, gap: 8 }}>
+          <View style={styles.metricCard}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
+              {summary.avgUploadSpeed}
+            </Text>
+            <Text style={styles.metricLabel}>Avg Upload</Text>
+          </View>
+
+          <View style={styles.metricCard}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
+              {summary.avgDownloadSpeed}
+            </Text>
+            <Text style={styles.metricLabel}>Avg Download</Text>
+          </View>
+
+          <View style={styles.metricCard}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
+              {summary.avgLatency}
+            </Text>
+            <Text style={styles.metricLabel}>Avg Latency</Text>
+          </View>
         </View>
 
-        <View style={styles.metricCard}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
-            {summary.avgDownloadSpeed}
-          </Text>
-          <Text style={styles.metricLabel}>Avg Download</Text>
-        </View>
+        <View style={{ flexDirection: 'row', marginBottom: 12, gap: 8 }}>
+          <View style={styles.metricCard}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
+              {summary.utilizationPct}
+            </Text>
+            <Text style={styles.metricLabel}>Utilization</Text>
+          </View>
 
-        <View style={styles.metricCard}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
-            {summary.avgLatency}
-          </Text>
-          <Text style={styles.metricLabel}>Avg Latency</Text>
-        </View>
-      </View>
+          <View style={styles.metricCard}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
+              {summary.totalDataConsumed}
+            </Text>
+            <Text style={styles.metricLabel}>Data Consumed</Text>
+          </View>
 
-      <View style={{ flexDirection: 'row', marginBottom: 12, gap: 8 }}>
-        <View style={styles.metricCard}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
-            {summary.utilizationPct}
-          </Text>
-          <Text style={styles.metricLabel}>Utilization</Text>
-        </View>
-
-        <View style={styles.metricCard}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
-            {summary.totalDataConsumed}
-          </Text>
-          <Text style={styles.metricLabel}>Data Consumed</Text>
-        </View>
-
-        <View style={styles.metricCard}>
-          <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
-            {summary.consumptionPct}
-          </Text>
-          <Text style={styles.metricLabel}>Consumption %</Text>
+          <View style={styles.metricCard}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 2 }}>
+              {summary.consumptionPct}
+            </Text>
+            <Text style={styles.metricLabel}>Consumption %</Text>
+          </View>
         </View>
       </View>
 
       {/* Speed Metrics Table */}
       <View style={styles.divider} />
-      <Text style={styles.sectionTitle}>Speed Metrics</Text>
 
-      <View style={styles.box}>
+      <View wrap={false}>
+        <Text style={styles.sectionTitle}>Speed Metrics</Text>
+      </View>
+
+      <View style={styles.box} wrap={false}>
         {/* Speed Trend Chart */}
         {speedData.length > 1 && (
           <View style={{ marginBottom: 12 }}>
@@ -113,14 +118,14 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
 
         {speedData.length > 0 ? (
           <View style={styles.table}>
-            <View style={styles.tableHeader}>
+            <View style={styles.tableHeader} wrap={false}>
               <Text style={{ ...styles.tableHeaderCell, flex: 2 }}>Month</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Upload (Mbps)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Download (Mbps)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Allocated (Mbps)</Text>
             </View>
             {speedData.slice(0, 10).map((row, index) => (
-              <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt}>
+              <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt} wrap={false}>
                 <Text style={{ ...styles.tableCell, flex: 2 }}>{row.date}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.upload}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.download}</Text>
@@ -134,9 +139,11 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
       </View>
 
       {/* Latency Metrics Table */}
-      <Text style={styles.sectionTitle}>Latency Metrics</Text>
+      <View wrap={false}>
+        <Text style={styles.sectionTitle}>Latency Metrics</Text>
+      </View>
 
-      <View style={styles.box}>
+      <View style={styles.box} wrap={false}>
         {/* Latency Trend Chart */}
         {latencyData.length > 1 && (
           <View style={{ marginBottom: 12 }}>
@@ -161,14 +168,14 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
 
         {latencyData.length > 0 ? (
           <View style={styles.table}>
-            <View style={styles.tableHeader}>
+            <View style={styles.tableHeader} wrap={false}>
               <Text style={{ ...styles.tableHeaderCell, flex: 2 }}>Month</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Avg (ms)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Min (ms)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Max (ms)</Text>
             </View>
             {latencyData.slice(0, 10).map((row, index) => (
-              <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt}>
+              <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt} wrap={false}>
                 <Text style={{ ...styles.tableCell, flex: 2 }}>{row.date}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.avg}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.min}</Text>
@@ -182,18 +189,20 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
       </View>
 
       {/* Data Consumption Table */}
-      <Text style={styles.sectionTitle}>Data Consumption</Text>
+      <View wrap={false}>
+        <Text style={styles.sectionTitle}>Data Consumption</Text>
+      </View>
 
-      <View style={styles.box}>
+      <View style={styles.box} wrap={false}>
         {consumptionData.length > 0 ? (
           <View style={styles.table}>
-            <View style={styles.tableHeader}>
+            <View style={styles.tableHeader} wrap={false}>
               <Text style={{ ...styles.tableHeaderCell, flex: 2 }}>Month</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Consumed (GB)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Allowance (GB)</Text>
             </View>
             {consumptionData.slice(0, 10).map((row, index) => (
-              <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt}>
+              <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt} wrap={false}>
                 <Text style={{ ...styles.tableCell, flex: 2 }}>{row.date}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.consumed}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.allowance}</Text>

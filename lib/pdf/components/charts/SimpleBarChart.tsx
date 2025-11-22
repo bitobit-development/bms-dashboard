@@ -34,7 +34,11 @@ export const SimpleBarChart: React.FC<SimpleBarChartProps> = ({
 }) => {
   const calculatedMax = maxValue || Math.max(...data.map(d => d.value), 1)
   const barHeight = Math.min(20, (height - 20) / data.length - 4)
-  const chartWidth = 300
+
+  // Ensure chart fits within A4 content area (~515pt width accounting for 40pt padding)
+  const maxChartWidth = 470 // Safe width for A4 page with margins
+  const chartWidth = Math.min(300, maxChartWidth)
+
   const labelWidth = showLabels ? 80 : 0
   const valueWidth = showValues ? 50 : 0
   const barAreaWidth = chartWidth - labelWidth - valueWidth
@@ -134,13 +138,17 @@ export const StackedBar: React.FC<StackedBarProps> = ({
   const total = segments.reduce((sum, s) => sum + s.value, 0)
   if (total === 0) return null
 
+  // Ensure chart fits within A4 content area
+  const maxWidth = 450 // Safe width for A4 page with margins
+  const safeWidth = Math.min(width, maxWidth)
+
   let currentX = 0
 
   return (
     <View>
-      <Svg width={width} height={height}>
+      <Svg width={safeWidth} height={height}>
         {segments.map((segment, index) => {
-          const segmentWidth = (segment.value / total) * width
+          const segmentWidth = (segment.value / total) * safeWidth
           const x = currentX
           currentX += segmentWidth
 

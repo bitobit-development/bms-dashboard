@@ -249,13 +249,13 @@ export const styles = StyleSheet.create({
   // Footer
   footer: {
     position: 'absolute',
-    bottom: 30,
+    bottom: 20,
     left: 40,
     right: 40,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingTop: 12,
+    paddingTop: 8,
     borderTop: `1px solid ${colors.bg.border}`,
   },
 
