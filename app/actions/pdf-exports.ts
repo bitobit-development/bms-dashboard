@@ -476,7 +476,7 @@ export async function cleanupExpiredExports(): Promise<ActionResult<{
  */
 async function processJob(jobId: string): Promise<void> {
   const startTime = Date.now()
-  const PDF_GENERATION_TIMEOUT = 50000 // 50s, leaving 10s buffer for Vercel 60s limit
+  const PDF_GENERATION_TIMEOUT = 280000 // 280s (4m 40s), leaving 20s buffer for Vercel 300s limit
 
   try {
     console.log(`[PDF] Job ${jobId} started at ${new Date().toISOString()}`)
@@ -513,7 +513,7 @@ async function processJob(jobId: string): Promise<void> {
     // Wrap PDF generation in timeout guard
     const timeoutPromise = new Promise<never>((_, reject) => {
       setTimeout(() => {
-        reject(new Error(`PDF generation timeout after ${PDF_GENERATION_TIMEOUT/1000}s. The file may be too large (${job.totalSites} sites). Try reducing the date range or site count.`))
+        reject(new Error(`PDF generation timeout after ${PDF_GENERATION_TIMEOUT/1000}s (${Math.floor(PDF_GENERATION_TIMEOUT/60000)}m ${(PDF_GENERATION_TIMEOUT%60000)/1000}s). The file may be too large (${job.totalSites} sites). Try reducing the date range or site count.`))
       }, PDF_GENERATION_TIMEOUT)
     })
 

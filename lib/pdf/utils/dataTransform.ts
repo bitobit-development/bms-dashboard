@@ -196,10 +196,10 @@ export const transformSiteData = (
 ): PdfSiteData => {
   const status = calculateStatus(data.summary.utilizationPct)
 
-  // Sample data to max 30 points for charts and 5 rows for tables
-  const sampledSpeedData = sampleDataPoints(data.speedData, 30)
-  const sampledLatencyData = sampleDataPoints(data.latencyData, 30)
-  const sampledConsumptionData = sampleDataPoints(data.consumptionData, 30)
+  // Use full data (no sampling) - user requested full data in reports
+  const sampledSpeedData = data.speedData
+  const sampledLatencyData = data.latencyData
+  const sampledConsumptionData = data.consumptionData
 
   return {
     site: {
