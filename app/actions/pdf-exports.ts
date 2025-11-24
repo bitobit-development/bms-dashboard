@@ -475,7 +475,12 @@ export async function cleanupExpiredExports(): Promise<ActionResult<{
  * In Phase 3, this will be replaced by a proper queue worker.
  */
 async function processJob(jobId: string): Promise<void> {
+  const startTime = Date.now()
+  const PDF_GENERATION_TIMEOUT = 50000 // 50s, leaving 10s buffer for Vercel 60s limit
+
   try {
+    console.log(`[PDF] Job ${jobId} started at ${new Date().toISOString()}`)
+
     // Check for required environment variable
     if (!process.env.BLOB_READ_WRITE_TOKEN) {
       throw new Error('BLOB_READ_WRITE_TOKEN is not configured. Please add it to your environment variables.')
@@ -499,18 +504,39 @@ async function processJob(jobId: string): Promise<void> {
       throw new Error('Job not found')
     }
 
+    console.log(`[PDF] Job config: ${job.totalSites} sites, date range: ${job.dateRangeStart.toISOString()} to ${job.dateRangeEnd.toISOString()}`)
+
     // Get sites
     const userSites = await getUserSites(job.organizationId, job.siteIds)
+    console.log(`[PDF] Found ${userSites.length} sites for export`)
 
-    // Generate PDF (placeholder for Phase 2)
-    const pdfBuffer = await generatePdf(
-      jobId,
-      userSites,
-      {
-        start: job.dateRangeStart,
-        end: job.dateRangeEnd,
-      }
-    )
+    // Wrap PDF generation in timeout guard
+    const timeoutPromise = new Promise<never>((_, reject) => {
+      setTimeout(() => {
+        reject(new Error(`PDF generation timeout after ${PDF_GENERATION_TIMEOUT/1000}s. The file may be too large (${job.totalSites} sites). Try reducing the date range or site count.`))
+      }, PDF_GENERATION_TIMEOUT)
+    })
+
+    // Generate PDF with timeout protection
+    const pdfBuffer = await Promise.race([
+      generatePdf(
+        jobId,
+        userSites,
+        {
+          start: job.dateRangeStart,
+          end: job.dateRangeEnd,
+        }
+      ),
+      timeoutPromise
+    ])
+
+    console.log(`[PDF] PDF generated in ${Date.now() - startTime}ms, size: ${pdfBuffer.length} bytes (${(pdfBuffer.length / 1024 / 1024).toFixed(2)}MB)`)
+
+    // Check blob size before upload
+    const MAX_BLOB_SIZE = 50 * 1024 * 1024 // 50MB safety limit
+    if (pdfBuffer.length > MAX_BLOB_SIZE) {
+      throw new Error(`PDF too large (${(pdfBuffer.length / 1024 / 1024).toFixed(2)}MB). Maximum: 50MB. Reduce date range or site count.`)
+    }
 
     // Generate filename: {startDate}-{endDate}_{siteCount}sites_{randomId}.pdf
     const startStr = format(job.dateRangeStart, 'yyyy-MM-dd')
@@ -518,11 +544,15 @@ async function processJob(jobId: string): Promise<void> {
     const randomSuffix = randomBytes(4).toString('hex')
     const filename = `${startStr}_${endStr}_${userSites.length}sites_${randomSuffix}.pdf`
 
+    console.log(`[PDF] Starting Blob upload: ${filename}`)
+
     // Upload to Vercel Blob
     const blob = await put(`exports/${filename}`, pdfBuffer, {
       access: 'public',
       addRandomSuffix: false,
     })
+
+    console.log(`[PDF] Upload complete in ${Date.now() - startTime}ms, URL: ${blob.url}`)
 
     // Update job with completion details
     await db
@@ -537,9 +567,12 @@ async function processJob(jobId: string): Promise<void> {
       })
       .where(eq(pdfExportJobs.id, jobId))
 
+    console.log(`[PDF] Job ${jobId} completed successfully in ${Date.now() - startTime}ms`)
+
     // Note: revalidatePath removed - cannot be called during background processing
   } catch (error) {
-    console.error(`Error processing job ${jobId}:`, error)
+    console.error(`[PDF] Job ${jobId} failed after ${Date.now() - startTime}ms:`, error)
+    console.error(`[PDF] Stack trace:`, error instanceof Error ? error.stack : 'No stack trace')
 
     // Update job with error
     await db
@@ -638,6 +671,7 @@ async function generatePdf(
   const insights = generateInsights(aggregateData)
 
   // Update progress to 90% (data fetching complete)
+  console.log(`[PDF] Data fetching complete, starting PDF generation`)
   await db
     .update(pdfExportJobs)
     .set({ progress: 90 })
@@ -647,6 +681,7 @@ async function generatePdf(
   const React = await import('react')
 
   // Create the PDF document element
+  console.log(`[PDF] Creating PDF document with ${pdfSitesData.length} sites`)
   const pdfDoc = React.createElement(NetworkUsageDocument, {
     aggregateData,
     sites: pdfSitesData,
@@ -654,20 +689,30 @@ async function generatePdf(
     generatedAt: new Date(),
   })
 
+  // Update progress to 92% (document created)
+  await db
+    .update(pdfExportJobs)
+    .set({ progress: 92 })
+    .where(eq(pdfExportJobs.id, jobId))
+
   // Render to buffer using react-pdf
+  console.log(`[PDF] Rendering PDF...`)
   // @ts-expect-error - react-pdf types don't perfectly match our component structure
   const pdfInstance = pdf(pdfDoc)
   const pdfBlob = await pdfInstance.toBlob()
 
+  // Update progress to 95% (rendering complete)
+  await db
+    .update(pdfExportJobs)
+    .set({ progress: 95 })
+    .where(eq(pdfExportJobs.id, jobId))
+
   // Convert Blob to Buffer
+  console.log(`[PDF] Converting to buffer...`)
   const arrayBuffer = await pdfBlob.arrayBuffer()
   const pdfBuffer = Buffer.from(arrayBuffer)
 
-  // Update progress to 100%
-  await db
-    .update(pdfExportJobs)
-    .set({ progress: 100 })
-    .where(eq(pdfExportJobs.id, jobId))
+  console.log(`[PDF] PDF generation complete, buffer size: ${pdfBuffer.length} bytes`)
 
   return pdfBuffer
 }
