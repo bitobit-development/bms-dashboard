@@ -142,6 +142,8 @@ middleware.ts            # Auth middleware + user sync
 - User status flow: `pending` → `active` (or `inactive`/`suspended`)
 - PDF export jobs track background processing with progress updates
 
+**Total Sites**: 131 active sites across KwaZulu-Natal, South Africa (see `docs/sites-list.md`)
+
 **Total Tables**: 15 (12 core + 3 network/PDF)
 
 ### Authentication & Authorization
@@ -226,6 +228,29 @@ export async function someAdminAction() {
 - **Drizzle Kit** - Schema migrations and studio
 - **tsx** - TypeScript execution for scripts
 - **PM2** - Process manager for telemetry generation
+
+## Running Scripts
+
+Scripts in `/scripts/` directory require environment variables from `.env.local`:
+
+```bash
+# Method 1: Using set -a (recommended)
+(
+  set -a
+  source .env.local
+  set +a
+  pnpm tsx scripts/your-script.ts
+)
+
+# Method 2: Using export with grep (alternative)
+# Not recommended due to special character handling issues
+```
+
+**Common Scripts:**
+- `list-all-sites.ts` - List all sites with city/state
+- `remove-duplicate-sites.ts` - Remove duplicate sites from database
+- `seed-network-data.ts` - Seed network telemetry data
+- `verify-network-coverage.ts` - Verify network data coverage
 
 ## Key Implementation Patterns
 
@@ -457,7 +482,7 @@ All loading states use `LoginLoading` component for consistency.
 **Architecture**: Background job processing with real-time progress tracking and Vercel Blob storage.
 
 **Key Files:**
-- **Server Actions**: `/app/actions/pdf-exports.ts` - 6 actions (start, check progress, cancel, history, cleanup, process)
+- **Server Actions**: `/app/actions/pdf-exports.ts` - 7 actions (start, check progress, cancel, delete, history, cleanup, process)
 - **PDF Engine**: `/lib/pdf/` - React PDF document generation
   - `NetworkUsageDocument.tsx` - Main PDF template
   - `components/CoverPage.tsx` - Professional branding
@@ -494,6 +519,17 @@ All loading states use `LoginLoading` component for consistency.
 - Parallel data fetching: 20 sites per query
 - Estimated time: 15-20 seconds for 120 sites
 - Vercel Pro plan: 60-second timeout for large exports
+
+**File Naming Convention:**
+- Format: `{startDate}_{endDate}_{siteCount}sites_{randomId}.pdf`
+- Example: `2025-01-01_2025-01-31_131sites_a1b2c3d4.pdf`
+- Random suffix: 8-character hex string for uniqueness
+
+**Export History Features:**
+- View PDF in new browser tab via "View" button
+- Download PDF with proper filename via "Download" button
+- Delete export (removes from Vercel Blob and database)
+- Confirmation dialog before deletion
 
 **Manual Setup Required:**
 ```bash

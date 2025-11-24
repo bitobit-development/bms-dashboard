@@ -65,6 +65,32 @@ export interface PdfAggregateData {
 }
 
 // ============================================================================
+// Data Sampling Functions
+// ============================================================================
+
+/**
+ * Sample data points to reduce chart complexity
+ * Keeps first, last, and evenly distributed points up to maxPoints
+ */
+export function sampleDataPoints<T>(data: T[], maxPoints: number = 30): T[] {
+  if (data.length <= maxPoints) return data
+
+  // Always keep first and last points
+  const step = Math.ceil((data.length - 2) / (maxPoints - 2))
+  const sampled: T[] = [data[0]] // Start with first point
+
+  // Add evenly distributed middle points
+  for (let i = step; i < data.length - 1; i += step) {
+    sampled.push(data[i])
+  }
+
+  // Always include last point
+  sampled.push(data[data.length - 1])
+
+  return sampled
+}
+
+// ============================================================================
 // Formatting Functions
 // ============================================================================
 
@@ -161,6 +187,7 @@ export const getStatusLabel = (status: 'good' | 'warning' | 'critical'): string 
 
 /**
  * Transform site network detail for PDF display
+ * Samples data points to reduce PDF rendering time
  */
 export const transformSiteData = (
   data: SiteNetworkDetail,
@@ -168,6 +195,11 @@ export const transformSiteData = (
   state: string | null
 ): PdfSiteData => {
   const status = calculateStatus(data.summary.utilizationPct)
+
+  // Sample data to max 30 points for charts and 5 rows for tables
+  const sampledSpeedData = sampleDataPoints(data.speedData, 30)
+  const sampledLatencyData = sampleDataPoints(data.latencyData, 30)
+  const sampledConsumptionData = sampleDataPoints(data.consumptionData, 30)
 
   return {
     site: {
@@ -189,19 +221,19 @@ export const transformSiteData = (
       consumptionPct: formatPercentage(data.summary.consumptionPct),
       status,
     },
-    speedData: data.speedData.map(row => ({
+    speedData: sampledSpeedData.map(row => ({
       date: formatDate(row.date),
       upload: row.upload.toFixed(2),
       download: row.download.toFixed(2),
       allocated: row.allocated.toFixed(0),
     })),
-    latencyData: data.latencyData.map(row => ({
+    latencyData: sampledLatencyData.map(row => ({
       date: formatDate(row.date),
       avg: row.avg.toFixed(2),
       min: row.min.toFixed(2),
       max: row.max.toFixed(2),
     })),
-    consumptionData: data.consumptionData.map(row => ({
+    consumptionData: sampledConsumptionData.map(row => ({
       date: formatDate(row.date),
       consumed: row.consumed.toFixed(3),
       allowance: row.allowance.toFixed(3),

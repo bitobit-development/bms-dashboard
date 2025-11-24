@@ -608,10 +608,13 @@ async function generatePdf(
     generateInsights,
   } = await import('@/lib/pdf/utils/dataTransform')
 
-  // Batch size for processing sites
-  const BATCH_SIZE = 10
+  // Batch size for processing sites (increased from 10 to 20 for better performance)
+  const BATCH_SIZE = 20
   const pdfSitesData = []
   let processedCount = 0
+
+  console.log(`[PDF] Starting data fetch for ${userSites.length} sites in batches of ${BATCH_SIZE}`)
+  console.time('[PDF] data-fetch-total')
 
   // Process sites in batches to provide progress updates
   for (let i = 0; i < userSites.length; i += BATCH_SIZE) {
@@ -660,15 +663,19 @@ async function generatePdf(
       .where(eq(pdfExportJobs.id, jobId))
   }
 
+  console.timeEnd('[PDF] data-fetch-total')
+
   // If no sites have data, create a minimal report
   if (pdfSitesData.length === 0) {
-    console.warn('No site data available for PDF generation')
+    console.warn('[PDF] No site data available for PDF generation')
     // We'll still generate a PDF with empty data
   }
 
   // Calculate aggregate data and insights
+  console.time('[PDF] data-transform')
   const aggregateData = calculateAggregateData(pdfSitesData, dateRange)
   const insights = generateInsights(aggregateData)
+  console.timeEnd('[PDF] data-transform')
 
   // Update progress to 90% (data fetching complete)
   console.log(`[PDF] Data fetching complete, starting PDF generation`)
@@ -681,6 +688,7 @@ async function generatePdf(
   const React = await import('react')
 
   // Create the PDF document element
+  console.time('[PDF] doc-create')
   console.log(`[PDF] Creating PDF document with ${pdfSitesData.length} sites`)
   const pdfDoc = React.createElement(NetworkUsageDocument, {
     aggregateData,
@@ -688,6 +696,7 @@ async function generatePdf(
     insights,
     generatedAt: new Date(),
   })
+  console.timeEnd('[PDF] doc-create')
 
   // Update progress to 92% (document created)
   await db
@@ -696,10 +705,12 @@ async function generatePdf(
     .where(eq(pdfExportJobs.id, jobId))
 
   // Render to buffer using react-pdf
-  console.log(`[PDF] Rendering PDF...`)
+  console.time('[PDF] pdf-render')
+  console.log(`[PDF] Rendering PDF with ${pdfSitesData.length} pages...`)
   // @ts-expect-error - react-pdf types don't perfectly match our component structure
   const pdfInstance = pdf(pdfDoc)
   const pdfBlob = await pdfInstance.toBlob()
+  console.timeEnd('[PDF] pdf-render')
 
   // Update progress to 95% (rendering complete)
   await db
@@ -708,11 +719,13 @@ async function generatePdf(
     .where(eq(pdfExportJobs.id, jobId))
 
   // Convert Blob to Buffer
+  console.time('[PDF] blob-convert')
   console.log(`[PDF] Converting to buffer...`)
   const arrayBuffer = await pdfBlob.arrayBuffer()
   const pdfBuffer = Buffer.from(arrayBuffer)
+  console.timeEnd('[PDF] blob-convert')
 
-  console.log(`[PDF] PDF generation complete, buffer size: ${pdfBuffer.length} bytes`)
+  console.log(`[PDF] PDF generation complete, buffer size: ${pdfBuffer.length} bytes (${(pdfBuffer.length / 1024 / 1024).toFixed(2)}MB)`)
 
   return pdfBuffer
 }

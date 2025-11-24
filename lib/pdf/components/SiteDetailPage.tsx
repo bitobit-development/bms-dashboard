@@ -124,7 +124,7 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Download (Mbps)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Allocated (Mbps)</Text>
             </View>
-            {speedData.slice(0, 10).map((row, index) => (
+            {speedData.slice(0, 5).map((row, index) => (
               <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt} wrap={false}>
                 <Text style={{ ...styles.tableCell, flex: 2 }}>{row.date}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.upload}</Text>
@@ -174,7 +174,7 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Min (ms)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Max (ms)</Text>
             </View>
-            {latencyData.slice(0, 10).map((row, index) => (
+            {latencyData.slice(0, 5).map((row, index) => (
               <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt} wrap={false}>
                 <Text style={{ ...styles.tableCell, flex: 2 }}>{row.date}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.avg}</Text>
@@ -201,7 +201,7 @@ export const SiteDetailPage: React.FC<SiteDetailPageProps> = ({ siteData }) => {
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Consumed (GB)</Text>
               <Text style={{ ...styles.tableHeaderCell, flex: 2, textAlign: 'right' }}>Allowance (GB)</Text>
             </View>
-            {consumptionData.slice(0, 10).map((row, index) => (
+            {consumptionData.slice(0, 5).map((row, index) => (
               <View key={index} style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt} wrap={false}>
                 <Text style={{ ...styles.tableCell, flex: 2 }}>{row.date}</Text>
                 <Text style={{ ...styles.tableCell, flex: 2, textAlign: 'right' }}>{row.consumed}</Text>
