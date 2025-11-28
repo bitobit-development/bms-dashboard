@@ -14,9 +14,10 @@ if (!process.env.DATABASE_URL) {
 
 // Create postgres client with connection pooling
 const client = postgres(process.env.DATABASE_URL, {
-  max: 10, // Maximum connections in pool
-  idle_timeout: 20, // Close idle connections after 20 seconds
-  connect_timeout: 30, // Connection timeout (increased for telemetry generator)
+  max: 1, // Maximum connections in pool (Vercel serverless)
+  idle_timeout: 10, // Close idle connections after 10 seconds
+  connect_timeout: 10, // Connection timeout (Vercel limit)
+  fetch_types: false, // Disable type fetching for faster connections
 })
 
 // Create Drizzle instance
